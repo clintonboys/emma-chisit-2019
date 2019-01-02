@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Banks",
+    "state": "NSW",
+    "electors": 104891,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [
+      {
+        "name": "Chris Gambian",
+        "party": "ALP"
+      },
+      {
+        "name": "David Coleman",
+        "party": "LIB",
+        "is_incumbent": 1,
+        "terms": 2
+      },
+      {
+        "name": "Gianluca Dragone",
+        "party": "GRN"
+      }
+    ],
+    "last_result": {
+      "primary": {
+        "LIB": 43.89,
+        "ALP": 39.95,
+        "GRN":  5.82,
+        "CDM":  5.32,
+        "FFS":  1.80,
+        "ANJ":  1.73,
+        "IND":  1.49
+      },
+      "tpp": {
+        "LIB": 51.44,
+        "ALP": 48.56
+      }
+    }
+  }
+]
