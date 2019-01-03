@@ -7,13 +7,18 @@ from poll_aggregator import PollAggregator
 
 NUM_ITERATIONS = 1
 SEATS_CONFIG = '/Users/clinton/Documents/dev/emma-chisit-2019/data/seats-2019.json'
-DEFAULT_PREF_FLOW = {Parties.GRN: {Parties.ALP: 0.8, Parties.LIB: 0.2}}
+DEFAULT_PREF_FLOW = {Parties.GRN: {Parties.ALP: 0.85, Parties.LIB: 0.15},
+                     Parties.CDM: {Parties.ALP: 0.3, Parties.LIB: 0.7},
+                     Parties.FFS: {Parties.ALP: 0.4, Parties.LIB: 0.6},
+                     Parties.ANJ: {Parties.ALP: 0.4, Parties.LIB: 0.6},
+                     Parties.IND: {Parties.ALP: 0.5, Parties.LIB: 0.5}
+                     }
 
 
 def main():
     logger = logging.getLogger('emma-chisit-2019')
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
 
     # poll_aggregator = PollAggregator()
     poll_aggregate = {Parties.ALP: 0.45, Parties.LIB: 0.45, Parties.GRN: 0.10} 
@@ -26,7 +31,7 @@ def main():
     while i < NUM_ITERATIONS:
         results_dict = {'seat': [], 'winner': []}
         for seat in seats:
-            seat.runoff(poll_aggregate, DEFAULT_PREF_FLOW)
+            seat.runoff(seat.last_result["primary"], DEFAULT_PREF_FLOW)
             results_dict['seat'].append(seat.name)
             results_dict['winner'].append(seat.winner.name)
         i += 1
