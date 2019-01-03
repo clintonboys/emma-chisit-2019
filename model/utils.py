@@ -10,7 +10,7 @@ class Parties(Enum):
     FFS = "FFS"
     ANJ = "ANJ"
     IND = "IND"
-
+    OTH = "OTH"
 
 def load_fundamentals_index():
     raise NotImplementedError()
