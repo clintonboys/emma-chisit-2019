@@ -36,5 +36,1090 @@
         "ALP": 48.56
       }
     }
+  },
+  {
+    "name": "Barton",
+    "state": "NSW",
+    "electors": 95693,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 35.39,
+        "ALP": 47.75,
+        "GRN":  8.83,
+        "CDM":  4.23,
+        "IND":  2.55,
+        "ODD":  1.25
+      },
+      "tpp": {
+        "LIB": 41.70,
+        "ALP": 58.30
+      }
+    }
+  },
+  {
+    "name": "Bennelong",
+    "state": "NSW",
+    "electors": 97173,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 50.41,
+        "ALP": 28.48,
+        "GRN":  9.13,
+        "CDM":  6.40,
+        "IND":  3.13,
+        "PIR":  1.37,
+        "ART":  1.08
+      },
+      "tpp": {
+        "LIB": 59.72,
+        "ALP": 40.28
+      }
+    }
+  },
+  {
+    "name": "Berowra",
+    "state": "NSW",
+    "electors": 98099,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 57.09,
+        "ALP": 19.88,
+        "GRN": 11.50,
+        "CDM":  5.54,
+        "IND":  3.92,
+        "SCI":  2.06
+      },
+      "tpp": {
+        "LIB": 66.45,
+        "ALP": 33.55
+      }
+    }
+  },
+  {
+    "name": "Blaxland",
+    "state": "NSW",
+    "electors": 90314,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 24.82,
+        "ALP": 63.31,
+        "GRN":  4.63,
+        "CDM":  6.02,
+        "SOC":  1.23
+      },
+      "tpp": {
+        "LIB": 30.52,
+        "ALP": 69.48
+      }
+    }
+  },
+  {
+    "name": "Bradfield",
+    "state": "NSW",
+    "electors": 97080,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 61.12,
+        "ALP": 17.01,
+        "GRN": 11.68,
+        "CDM":  3.73,
+        "LBA":  1.92,
+        "IND":  4.54
+      },
+      "tpp": {
+        "LIB": 71.04,
+        "ALP": 28.96
+      }
+    }
+  },
+  {
+    "name": "Calare",
+    "state": "NSW",
+    "electors": 104891,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 47.58,
+        "ALP": 27.06,
+        "GRN":  7.22,
+        "LDM":  6.54,
+        "NXT":  5.49,
+        "IND":  3.83,
+        "CDM":  2.38
+      },
+      "tpp": {
+        "NAT": 61.81,
+        "ALP": 48.56
+      }
+    }
+  },
+  {
+    "name": "Chifley",
+    "state": "NSW",
+    "electors": 93354,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 22.66,
+        "ALP": 61.09,
+        "GRN":  4.54,
+        "CDM":  9.14,
+        "IND":  2.56
+      },
+      "tpp": {
+        "LIB": 30.81,
+        "ALP": 69.19
+      }
+    }
+  },
+  {
+    "name": "Cook",
+    "state": "NSW",
+    "electors": 96368,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 58.35,
+        "ALP": 26.57,
+        "GRN":  6.78,
+        "CDM":  4.85,
+        "IND":  3.45
+      },
+      "tpp": {
+        "LIB": 65.39,
+        "ALP": 34.61
+      }
+    }
+  },
+  {
+    "name": "Cowper",
+    "state": "NSW",
+    "electors": 96368,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 45.97,
+        "IND": 26.29,
+        "ALP": 13.61,
+        "GRN":  6.67,
+        "CDM":  3.42,
+        "IND":  3.34,
+        "CEC":  0.70
+      },
+      "tpp": {
+        "NAT": 54.56,
+        "IND": 45.44
+      }
+    }
+  },
+  {
+    "name": "Cunningham",
+    "state": "NSW",
+    "electors": 101857,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 29.16,
+        "ALP": 47.89,
+        "GRN": 14.65,
+        "CDM":  4.06,
+        "SCI":  2.61,
+        "NCP":  1.63
+      },
+      "tpp": {
+        "LIB": 36.68,
+        "ALP": 63.32
+      }
+    }
+  },
+  {
+    "name": "Dobell",
+    "state": "NSW",
+    "electors": 102630,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 37.84,
+        "ALP": 42.88,
+        "GRN":  5.80,
+        "ONP":  8.61,
+        "CDM":  2.64,
+        "IND":  2.23
+      },
+      "tpp": {
+        "LIB": 45.19,
+        "ALP": 54.81
+      }
+    }
+  },
+  {
+    "name": "Eden-Monaro",
+    "state": "NSW",
+    "electors": 100868,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 41.34,
+        "ALP": 41.88,
+        "GRN":  7.60,
+        "ANJ":  2.10,
+        "CDM":  1.87,
+        "IND":  1.78,
+        "DFV":  1.53,
+        "IND":  1.90
+      },
+      "tpp": {
+        "LIB": 47.07,
+        "ALP": 52.93
+      }
+    }
+  },
+  {
+    "name": "Farrer",
+    "state": "NSW",
+    "electors": 102630,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 57.87,
+        "ALP": 18.11,
+        "GRN":  8.22,
+        "LBA":  6.08,
+        "IND":  4.28,
+        "CDM":  3.60,
+        "MAT":  1.85
+      },
+      "tpp": {
+        "LIB": 70.53,
+        "ALP": 29.47
+      }
+    }
+  },
+  {
+    "name": "Fowler",
+    "state": "NSW",
+    "electors": 94620,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 60.82,
+        "ALP": 25.73,
+        "GRN":  6.21,
+        "CDM":  5.65,
+        "SMR":  1.58
+      },
+      "tpp": {
+        "LIB": 45.19,
+        "ALP": 54.81
+      }
+    }
+  },
+  {
+    "name": "Gilmore",
+    "state": "NSW",
+    "electors": 107611,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 45.28,
+        "ALP": 39.23,
+        "GRN": 10.49,
+        "CDM":  5.00
+      },
+      "tpp": {
+        "LIB": 50.73,
+        "ALP": 49.27
+      }
+    }
+  },
+  {
+    "name": "Grayndler",
+    "state": "NSW",
+    "electors": 102630,
+    "type": "city",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 23.31,
+        "ALP": 46.07,
+        "GRN": 22.24,
+        "ANJ":  2.08,
+        "SCI":  1.32,
+        "CDM":  1.23,
+        "DLR":  1.17,
+        "SEX":  1.06,
+        "RNE":  0.61,
+        "CYC":  0.52,
+        "SOC":  0.38
+      },
+      "tpp": {
+        "LIB": 45.19,
+        "ALP": 54.81
+      }
+    }
+  },
+  {
+    "name": "Greenway",
+    "state": "NSW",
+    "electors": 96365,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 34.41,
+        "ALP": 49.08,
+        "GRN":  3.76,
+        "LDM":  3.28,
+        "CDM":  5.03,
+        "IND":  1.96,
+        "FFS":  1.43,
+        "SCI":  1.04
+      },
+      "tpp": {
+        "LIB": 43.69,
+        "ALP": 56.31
+      }
+    }
+  },
+  {
+    "name": "Hughes",
+    "state": "NSW",
+    "electors": 98090,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 51.97,
+        "ALP": 31.88,
+        "GRN":  7.37,
+        "CDM":  4.79,
+        "ANJ":  3.99
+      },
+      "tpp": {
+        "LIB": 59.33,
+        "ALP": 40.67
+      }
+    }
+  },
+  {
+    "name": "Hume",
+    "state": "NSW",
+    "electors": 100239,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 53.83,
+        "ALP": 31.84,
+        "GRN":  6.61,
+        "CDM":  3.72,
+        "BUL":  2.39,
+        "CEC":  1.61
+      },
+      "tpp": {
+        "LIB": 60.18,
+        "ALP": 39.82
+      }
+    }
+  },
+  {
+    "name": "Hunter",
+    "state": "NSW",
+    "electors": 104715,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 26.34,
+        "ALP": 51.79,
+        "GRN":  7.09,
+        "IND":  4.91,
+        "CDM":  3.38,
+        "IND":  3.33,
+        "IND":  2.00,
+        "IND":  1.14
+      },
+      "tpp": {
+        "NAT": 37.54,
+        "ALP": 62.46
+      }
+    }
+  },
+  {
+    "name": "Kingsford-Smith",
+    "state": "NSW",
+    "electors": 96983,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 37.54,
+        "ALP": 47.37,
+        "GRN": 10.53,
+        "CDM":  2.33,
+        "SCI":  2.23
+      },
+      "tpp": {
+        "LIB": 41.43,
+        "ALP": 58.57
+      }
+    }
+  },
+  {
+    "name": "Lindsay",
+    "state": "NSW",
+    "electors": 102630,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 39.30,
+        "ALP": 41.08,
+        "GRN":  3.58,
+        "CDM":  3.08,
+        "IND":  2.38,
+        "LBA":  2.36,
+        "NXT":  2.07,
+        "FFS":  1.69,
+        "JUS":  1.68,
+        "ANJ":  1.63,
+        "AUF":  1.20
+      },
+      "tpp": {
+        "LIB": 48.89,
+        "ALP": 51.11
+      }
+    }
+  },
+  {
+    "name": "Lyne",
+    "state": "NSW",
+    "electors": 104451,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 49.57,
+        "ALP": 26.56,
+        "GRN":  9.44,
+        "IND":  9.26,
+        "CDM":  3.04,
+        "IND":  2.13
+      },
+      "tpp": {
+        "NAT": 61.63,
+        "ALP": 38.37
+      }
+    }
+  },
+  {
+    "name": "Macarthur",
+    "state": "NSW",
+    "electors": 96291,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 35.85,
+        "ALP": 51.88,
+        "GRN":  4.27,
+        "CDM":  4.31,
+        "NXT":  3.69
+      },
+      "tpp": {
+        "LIB": 41.67,
+        "ALP": 58.33
+      }
+    }
+  },
+  {
+    "name": "Mackellar",
+    "state": "NSW",
+    "electors": 104451,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 51.17,
+        "ALP": 17.32,
+        "GRN": 14.05,
+        "CDM":  2.56,
+        "IND":  7.23,
+        "IND":  4.83,
+        "IND":  2.84
+      },
+      "tpp": {
+        "LIB": 65.74,
+        "ALP": 34.26
+      }
+    }
+  },
+  {
+    "name": "Macquarie",
+    "state": "NSW",
+    "electors": 104451,
+    "type": "outer-suburban",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 38.21,
+        "ALP": 35.52,
+        "GRN": 11.22,
+        "CDM":  3.90,
+        "SFF":  3.88,
+        "ANJ":  2.79,
+        "LBA":  1.85,
+        "JUS":  1.81,
+        "LDM":  0.82
+      },
+      "tpp": {
+        "NAT": 61.63,
+        "ALP": 38.37
+      }
+    }
+  },
+  {
+    "name": "McMahon",
+    "state": "NSW",
+    "electors": 95479,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 30.05,
+        "ALP": 53.44,
+        "GRN":  5.42,
+        "CDM":  7.20,
+        "AUF":  2.09,
+        "IND":  1.79
+      },
+      "tpp": {
+        "LIB": 37.89,
+        "ALP": 62.11
+      }
+    }
+  },
+  {
+    "name": "Mitchell",
+    "state": "NSW",
+    "electors": 95506,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 60.49,
+        "ALP": 24.61,
+        "GRN":  7.99,
+        "CDM":  6.91
+      },
+      "tpp": {
+        "LIB": 67.82,
+        "ALP": 32.18
+      }
+    }
+  },
+  {
+    "name": "New England",
+    "state": "NSW",
+    "electors": 96441,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 64.92,
+        "ALP": 11.12,
+        "GRN":  4.35,
+        "IND":  6.79,
+        "CDM":  2.42,
+        "COM":  2.40,
+        "SCI":  1.35,
+        "IND":  1.30,
+        "ANJ":  1.06,
+        "SUS":  0.72,
+        "AFF":  0.69,
+        "IND":  0.67,
+        "LDM":  0.59,
+        "COU":  0.56,
+        "RUA":  0.42,
+        "SEN":  0.39,
+        "C21":  0.25
+      },
+      "tpp": {
+        "NAT": 61.63,
+        "ALP": 38.37
+      }
+    }
+  },
+  {
+    "name": "Newcastle",
+    "state": "NSW",
+    "electors": 104174,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 29.92,
+        "ALP": 47.12,
+        "GRN": 13.66,
+        "DLR":  3.42,
+        "CDM":  2.15,
+        "IND":  2.76,
+        "DLP":  0.98
+      },
+      "tpp": {
+        "LIB": 36.16,
+        "ALP": 63.84
+      }
+    }
+  },
+  {
+    "name": "North Sydney",
+    "state": "NSW",
+    "electors": 97100,
+    "type": "suburban",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 51.49,
+        "ALP": 16.80,
+        "GRN": 13.02,
+        "IND": 12.79,
+        "CDM":  2.05,
+        "SCI":  1.76,
+        "LDM":  1.39,
+        "FFS":  0.70
+      },
+      "tpp": {
+        "LIB": 63.61,
+        "ALP": 36.39
+      }
+    }
+  },
+  {
+    "name": "Page",
+    "state": "NSW",
+    "electors": 108793,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 44.28,
+        "ALP": 34.86,
+        "GRN": 11.14,
+        "LDM":  4.01,
+        "ANJ":  2.85,
+        "CDM":  2.85
+      },
+      "tpp": {
+        "NAT": 52.30,
+        "ALP": 47.70
+      }
+    }
+  },
+  {
+    "name": "Parkes",
+    "state": "NSW",
+    "electors": 98717,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 58.65,
+        "ALP": 28.57,
+        "GRN":  6.25,
+        "CDM":  4.22,
+        "ODD":  2.33
+      },
+      "tpp": {
+        "NAT": 65.10,
+        "ALP": 34.90
+      }
+    }
+  },
+  {
+    "name": "Parramatta",
+    "state": "NSW",
+    "electors": 90389,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 34.37,
+        "ALP": 46.46,
+        "GRN":  6.88,
+        "CDM":  5.30,
+        "IND":  2.50,
+        "LDM":  2.45,
+        "FFS":  1.47,
+        "ODD":  0.57
+      },
+      "tpp": {
+        "LIB": 42.33,
+        "ALP": 57.67
+      }
+    }
+  },
+  {
+    "name": "Paterson",
+    "state": "NSW",
+    "electors": 105211,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 31.51,
+        "ALP": 46.06,
+        "GRN":  5.79,
+        "ONP": 13.05,
+        "CDM":  2.06,
+        "RUA":  1.01,
+        "CEC":  0.53
+      },
+      "tpp": {
+        "LIB": 39.26,
+        "ALP": 60.74
+      }
+    }
+  },
+  {
+    "name": "Reid",
+    "state": "NSW",
+    "electors": 95345,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 48.80,
+        "ALP": 36.33,
+        "GRN":  8.47,
+        "CDM":  4.10,
+        "FFS":  2.30
+      },
+      "tpp": {
+        "LIB": 54.69,
+        "ALP": 45.31
+      }
+    }
+  },
+  {
+    "name": "Richmond",
+    "state": "NSW",
+    "electors": 102146,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 37.61,
+        "ALP": 31.05,
+        "GRN": 20.44,
+        "ONP":  6.26,
+        "ANJ":  3.14,
+        "CDM":  1.51
+      },
+      "tpp": {
+        "NAT": 46.04,
+        "ALP": 53.96
+      }
+    }
+  },
+  {
+    "name": "Riverina",
+    "state": "NSW",
+    "electors": 103704,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 57.20,
+        "ALP": 25.52,
+        "GRN":  4.49,
+        "IND":  6.12,
+        "CDM":  3.24,
+        "FFS":  3.42
+      },
+      "tpp": {
+        "NAT": 66.44,
+        "ALP": 33.56
+      }
+    }
+  },
+  {
+    "name": "Robertson",
+    "state": "NSW",
+    "electors": 100319,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 44.68,
+        "ALP": 38.43,
+        "GRN":  8.35,
+        "IND":  2.86,
+        "CDM":  2.66,
+        "APD":  1.60,
+        "LDM":  1.41
+      },
+      "tpp": {
+        "NAT": 61.63,
+        "ALP": 38.37
+      }
+    }
+  },
+  {
+    "name": "Shortland",
+    "state": "NSW",
+    "electors": 102883,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 35.20,
+        "ALP": 51.17,
+        "GRN":  9.46,
+        "CDM":  4.16
+      },
+      "tpp": {
+        "LIB": 40.06,
+        "ALP": 59.94
+      }
+    }
+  },
+  {
+    "name": "Sydney",
+    "state": "NSW",
+    "electors": 93503,
+    "type": "city",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 29.15,
+        "ALP": 43.74,
+        "GRN": 18.81,
+        "ANJ":  1.70,
+        "CDM":  1.69,
+        "SEX":  1.66,
+        "SCI":  1.55,
+        "SUS":  0.69,
+        "SOC":  0.57,
+        "ODD":  0.44
+      },
+      "tpp": {
+        "LIB": 34.69,
+        "ALP": 65.31
+      }
+    }
+  },
+  {
+    "name": "Warringah",
+    "state": "NSW",
+    "electors": 92277,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 51.65,
+        "ALP": 14.79,
+        "GRN": 12.19,
+        "IND": 11.41,
+        "CDM":  1.20,
+        "NXT":  6.35,
+        "SCI":  0.92,
+        "ART":  0.77,
+        "IND":  0.42,
+        "IND":  0.29
+      },
+      "tpp": {
+        "LIB": 61.55,
+        "GRN": 38.45
+      }
+    }
+  },
+  {
+    "name": "Watson",
+    "state": "NSW",
+    "electors": 93160,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 25.39,
+        "ALP": 55.39,
+        "GRN":  6.67,
+        "CDM":  9.56,
+        "SCI":  1.94,
+        "ODD":  1.05
+      },
+      "tpp": {
+        "LIB": 32.42,
+        "ALP": 67.58
+      }
+    }
+  },
+  {
+    "name": "Wentworth",
+    "state": "NSW",
+    "electors": 88641,
+    "type": "city",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 62.26,
+        "ALP": 17.73,
+        "GRN": 14.86,
+        "ART":  1.76,
+        "SCI":  1.17,
+        "CDM":  1.07,
+        "IND":  0.68,
+        "IND":  0.46
+      },
+      "tpp": {
+        "LIB": 67.75,
+        "ALP": 32.25
+      }
+    }
+  },
+  {
+    "name": "Werriwa",
+    "state": "NSW",
+    "electors": 97942,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 36.56,
+        "ALP": 52.14,
+        "GRN":  4.60,
+        "CDM":  6.70
+      },
+      "tpp": {
+        "LIB": 41.80,
+        "ALP": 58.20
+      }
+    }
+  },
+  {
+    "name": "Whitlam",
+    "state": "NSW",
+    "electors": 104069,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 26.28,
+        "ALP": 52.76,
+        "GRN":  8.29,
+        "NAT":  6.44,
+        "CDM":  4.11,
+        "NCP":  2.11
+      },
+      "tpp": {
+        "LIB": 36.28,
+        "ALP": 63.72
+      }
+    }
+  },
+  {
+    "name": "Adelaide",
+    "state": "SA",
+    "electors": 98662,
+    "type": "city",
+    "held_by": "ALP",
+    "candidates": [
+      {
+        "name": "David Colovic",
+        "party": "LIB"
+      },
+      {
+        "name": "Kate Ellis",
+        "party": "ALP",
+        "is_incumbent": 1,
+        "terms": 5
+      },
+      {
+        "name": "Joe Hill",
+        "party": "NXT"
+      }
+    ],
+    "last_result": {
+      "primary": {
+        "LIB": 36.43,
+        "ALP": 35.93,
+        "NXT": 12.86,
+        "GRN": 10.44,
+        "FFS":  1.92,
+        "ANJ":  1.35,
+        "LDM":  1.08
+      },
+      "tpp": {
+        "LIB": 45.35,
+        "ALP": 54.65
+      }
+    }
   }
 ]

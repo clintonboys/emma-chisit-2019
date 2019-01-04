@@ -1,4 +1,4 @@
-start_date,end_date,pollster,scope,sample,lnp,alp,grn,phon,nxt,lnp2pp,alp2pp,lnpra,alpra
+start_date,end_date,pollster,scope,sample,LIB,ALP,oth_GRN,oth_ONP,oth_NXT,lnp2pp,alp2pp,lnpra,alpra
 28/06/2016,10/07/2016,Essential Research (two-week),NAT,2000,41,36,10,,3,49,51,,
 05/07/2016,17/07/2016,Essential Research (two-week),NAT,2000,39,36,10,,4,49,51,,
 13/07/2016,25/07/2016,Essential Research (two-week),NAT,2000,39,37,10,,4,48,52,,

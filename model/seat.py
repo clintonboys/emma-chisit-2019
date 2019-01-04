@@ -14,11 +14,12 @@ def load_seats(seats_config_file, logger):
                              "type": seat["type"]}
             seat_held_by = seat["held_by"]
             seat_candidates = seat["candidates"]
-            seat_last_result = seat["last_result"]
+            seat_last_result = {Parties(party): vote for party, vote in seat["last_result"]["primary"].iteritems()}
             this_seat = Seat(seat_name, seat_state, seat_features, seat_held_by,
                              seat_candidates, seat_last_result, logger)
             seats.append(this_seat)
-            logger.info('Loaded seat {} into memory'.format(seat_name))
+            logger.debug('Loaded seat {} into memory'.format(seat_name))
+    logger.info('Loaded {} seats'.format(len(seats)))
     return seats
 
 
@@ -32,6 +33,7 @@ class Seat(object):
         self.last_result = last_result
         self.logger = logger
         self.winner = None
+        self.winning_margin = 0
 
     def runoff(self, primary_results, pref_flows):
         """
@@ -70,7 +72,7 @@ class Seat(object):
         round_no = 0
 
         while len(remaining_candidates) > 2:
-            self.logger.info('Runoff for {}, round #{}. Current candidates: {}'.format(self.name,
+            self.logger.debug('Runoff for {}, round #{}. Current candidates: {}'.format(self.name,
                                                                                        round_no + 1,
                                                                                        zip(remaining_candidates.keys(),
                                                                                            remaining_candidates.values()
@@ -78,6 +80,7 @@ class Seat(object):
             round_no = round_no + 1
             to_eliminate = min(remaining_candidates, key=remaining_candidates.get)
             votes = remaining_candidates[to_eliminate]
+            self.logger.debug('Eliminating {}. Total votes: {}'.format(to_eliminate, sum(remaining_candidates.values())))
             del remaining_candidates[to_eliminate]
             try:
                 to_dist = pref_flows[Parties(to_eliminate)]
@@ -102,10 +105,12 @@ class Seat(object):
                 if Parties(party) in to_dist:
                     remaining_candidates[Parties(party)] = np.round(remaining_candidates[Parties(party)] +
                                                                     to_dist[Parties(party)] * votes, 2)
-                else:
-                    if float(remaining_candidates[party]) / float(total) > 0.1:
-                        raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
+                # else:
+                #     if float(remaining_candidates[party]) / float(total) > 0.1:
+                #         print remaining_candidates[party], total
+                #         raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
         self.logger.info('Runoff for {} complete. Final results: {}'.format(self.name, zip(remaining_candidates.keys(),
                                                                                            remaining_candidates.values())))
         self.winner = max(remaining_candidates, key=remaining_candidates.get)
+        self.winning_margin = max(remaining_candidates.values()) if self.winner != Parties.ALP else 100 -max(remaining_candidates.values())
         return remaining_candidates

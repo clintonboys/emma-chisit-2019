@@ -3,8 +3,8 @@ import pandas as pd
 from utils import Parties
 
 
-def load_polls(poll_database):
-    poll_data = pd.read_csv(poll_database)
+def load_polls(poll_database, logger):
+    poll_data = pd.read_csv(poll_database).fillna(0)
     others_cols = [col for col in poll_data.columns if 'oth_' in col]
     poll_data['start_date'] = pd.to_datetime(poll_data['start_date'])
     poll_data['end_date'] = pd.to_datetime(poll_data['end_date'])
@@ -15,8 +15,8 @@ def load_polls(poll_database):
         poll_scope = row['scope']
         poll_median_date = row['median_date']
         poll_sample_size = int(row['sample'])
-        poll_lnp = row['lnp']
-        poll_alp = row['alp']
+        poll_lnp = row['LIB']
+        poll_alp = row['ALP']
         poll_results = {Parties.ALP: poll_alp, Parties.LIB: poll_lnp}
         poll_others_results = {Parties(col.split('_')[1]): row[col] for col in others_cols if row[col] != np.nan}
         poll_results.update(poll_others_results)
@@ -29,6 +29,7 @@ def load_polls(poll_database):
         poll_tpp = {Parties.ALP: poll_tpp_alp, Parties.LIB: poll_tpp_coa}
         polls.append(Poll(poll_pollster, poll_scope, poll_median_date, poll_sample_size, 
                           poll_results, poll_tpp, poll_others_list))
+    logger.info('Loaded {} polls'.format(len(polls)))
     return polls
 
 

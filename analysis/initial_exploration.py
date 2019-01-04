@@ -20,9 +20,9 @@ def main():
         data.append([ele if ele else np.nan for ele in cols ]) # Get rid of empty values
 
     df = pd.DataFrame(data)
-    df.columns = ['start_date', 'end_date', 'pollster', 'scope', 'sample', 'lnp', 'alp', 'grn', 'phon',
-                     'nxt', 'lnp2pp', 'alp2pp', 'lnpra', 'alpra']
-    df.to_csv('/Users/clinton/Documents/dev/elections/emma-chisit-2019/poll_bludger_national.csv', index=False)
+    df.columns = ['start_date', 'end_date', 'pollster', 'scope', 'sample', 'LIB', 'ALP', 'oth_GRN', 'oth_ONP',
+                  'oth_NXT', 'lnp2pp', 'alp2pp', 'lnpra', 'alpra']
+    df.to_csv('/Users/clinton/Documents/dev/emma-chisit-2019/data/poll_bludger_national.csv', index=False)
     time.sleep(2)
     elem = driver.find_element_by_id('//*[@id="btvic"]')
     elem.click()

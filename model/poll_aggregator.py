@@ -14,7 +14,7 @@ class PollAggregator(object):
         self.polls = polls
         self.weights = weights
 
-    def aggregate_polls(self, to_date, num_days):
+    def aggregate_polls(self, to_date, num_days, logger):
         relevant_polls = []
         from_date = to_date - dt.timedelta(days=num_days)
 
@@ -42,5 +42,5 @@ class PollAggregator(object):
         change = sum([aggregated_poll.results[party] for party in aggregated_poll.results])
         old_others = aggregated_poll.results[Parties.OTH]
         aggregated_poll.results[Parties.OTH] = old_others - change + 100
-        print aggregated_poll.results
+        logger.info('Aggregated {} polls: {}'.format(len(relevant_polls), aggregated_poll.results))
         return aggregated_poll
