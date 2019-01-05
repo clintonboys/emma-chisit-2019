@@ -14,9 +14,10 @@ def load_seats(seats_config_file, logger):
                              "type": seat["type"]}
             seat_held_by = seat["held_by"]
             seat_candidates = seat["candidates"]
+            seat_tpp = [Parties(party) for party in seat["last_result"]["tpp"].keys()]
             seat_last_result = {Parties(party): vote for party, vote in seat["last_result"]["primary"].iteritems()}
             this_seat = Seat(seat_name, seat_state, seat_features, seat_held_by,
-                             seat_candidates, seat_last_result, logger)
+                             seat_candidates, seat_tpp, seat_last_result, logger)
             seats.append(this_seat)
             logger.debug('Loaded seat {} into memory'.format(seat_name))
     logger.info('Loaded {} seats'.format(len(seats)))
@@ -24,12 +25,13 @@ def load_seats(seats_config_file, logger):
 
 
 class Seat(object):
-    def __init__(self, name, state, features, held_by, candidates, last_result, logger):
+    def __init__(self, name, state, features, held_by, candidates, tpp, last_result, logger):
         self.name = name
         self.state = state
         self.features = features
         self.held_by = held_by
         self.candidates = candidates
+        self.tpp = tpp
         self.last_result = last_result
         self.logger = logger
         self.winner = None
@@ -62,7 +64,10 @@ class Seat(object):
         """
 
         total = np.sum(primary_results.values())
-
+        tpp = self.tpp
+        pref_flows = {party: v for party, prefs in pref_flows.iteritems()
+                      for k, v in prefs.iteritems() if set(k) == set(tpp)}
+        self.logger.debug(pref_flows)
         try:
             del primary_results['Informal']
         except KeyError:
@@ -84,7 +89,9 @@ class Seat(object):
             del remaining_candidates[to_eliminate]
             try:
                 to_dist = pref_flows[Parties(to_eliminate)]
-            except KeyError:
+            except KeyError, e:
+                self.logger.debug(pref_flows)
+                self.logger.debug(str(e))
                 to_dist = {}
                 for party in remaining_candidates:
                     if Parties(party) in Parties:
@@ -93,6 +100,7 @@ class Seat(object):
                         to_dist[party] = 0.5405
                     else:
                         to_dist[party] = 0
+            self.logger.debug('To dist: {}'.format(to_dist))
             fixed_preferences = {}
             for party in remaining_candidates:
                 if Parties(party) in to_dist.keys():
@@ -105,12 +113,12 @@ class Seat(object):
                 if Parties(party) in to_dist:
                     remaining_candidates[Parties(party)] = np.round(remaining_candidates[Parties(party)] +
                                                                     to_dist[Parties(party)] * votes, 2)
-                # else:
-                #     if float(remaining_candidates[party]) / float(total) > 0.1:
-                #         print remaining_candidates[party], total
-                #         raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
+                else:
+                    if float(remaining_candidates[party]) / float(total) > 0.1:
+                        print remaining_candidates[party], total
+                        raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
         self.logger.info('Runoff for {} complete. Final results: {}'.format(self.name, zip(remaining_candidates.keys(),
                                                                                            remaining_candidates.values())))
         self.winner = max(remaining_candidates, key=remaining_candidates.get)
-        self.winning_margin = max(remaining_candidates.values()) if self.winner != Parties.ALP else 100 -max(remaining_candidates.values())
+        self.winning_margin = max(remaining_candidates.values())
         return remaining_candidates
