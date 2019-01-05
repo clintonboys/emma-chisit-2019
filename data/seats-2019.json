@@ -1122,5 +1122,230 @@
         "ALP": 54.65
       }
     }
+  },
+  {
+    "name": "Barker",
+    "state": "SA",
+    "electors": 98673,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 46.59,
+        "NXT": 29.07,
+        "ALP": 15.21,
+        "FFS":  5.78,
+        "GRN":  3.36
+      },
+      "tpp": {
+        "LIB": 54.74,
+        "NXT": 45.26
+      }
+    }
+  },
+  {
+    "name": "Boothby",
+    "state": "SA",
+    "electors": 99662,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 41.24,
+        "NXT": 20.66,
+        "ALP": 24.52,
+        "FFS":  2.60,
+        "GRN":  8.40,
+        "ANJ":  1.42,
+        "IND":  0.70,
+        "IND":  0.46
+      },
+      "tpp": {
+        "LIB": 53.50,
+        "NXT": 46.50
+      }
+    }
+  },
+  {
+    "name": "Grey",
+    "state": "SA",
+    "electors": 93495,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 42.74,
+        "NXT": 27.74,
+        "ALP": 21.56,
+        "FFS":  4.13,
+        "GRN":  2.56,
+        "IND":  1.27
+      },
+      "tpp": {
+        "LIB": 51.95,
+        "NXT": 48.05
+      }
+    }
+  },
+  {
+    "name": "Hindmarsh",
+    "state": "SA",
+    "electors": 102264,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 40.36,
+        "NXT": 15.07,
+        "ALP": 34.02,
+        "FFS":  2.02,
+        "GRN":  6.53,
+        "ANJ":  1.49,
+        "CDM":  0.51
+      },
+      "tpp": {
+        "LIB": 49.42,
+        "ALP": 50.58
+      }
+    }
+  },
+  {
+    "name": "Kingston",
+    "state": "SA",
+    "electors": 97008,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 23.31,
+        "NXT": 17.20,
+        "ALP": 49.42,
+        "FFS":  4.33,
+        "GRN":  5.74
+      },
+      "tpp": {
+        "LIB": 32.95,
+        "ALP": 67.05
+      }
+    }
+  },
+  {
+    "name": "Makin",
+    "state": "SA",
+    "electors": 98673,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 28.54,
+        "NXT": 16.60,
+        "ALP": 41.84,
+        "FFS":  4.54,
+        "GRN":  4.65,
+        "IND":  2.26,
+        "ANJ":  1.57
+      },
+      "tpp": {
+        "LIB": 40.35,
+        "ALP": 59.65
+      }
+    }
+  },
+  {
+    "name": "Mayo",
+    "state": "SA",
+    "electors": 98673,
+    "type": "rural",
+    "held_by": "NXT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 37.76,
+        "NXT": 34.86,
+        "ALP": 13.52,
+        "FFS":  4.60,
+        "GRN":  8.05,
+        "LDM":  1.21
+      },
+      "tpp": {
+        "LIB": 45.03,
+        "NXT": 54.97
+      }
+    }
+  },
+  {
+    "name": "Port Adelaide",
+    "state": "SA",
+    "electors": 101936,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 18.63,
+        "NXT": 18.72,
+        "ALP": 48.24,
+        "FFS":  4.67,
+        "GRN":  6.96,
+        "CDM":  0.62,
+        "ANJ":  2.16
+      },
+      "tpp": {
+        "NXT": 35.14,
+        "ALP": 64.86
+      }
+    }
+  },
+  {
+    "name": "Sturt",
+    "state": "SA",
+    "electors": 96688,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 44.45,
+        "NXT": 21.16,
+        "ALP": 22.20,
+        "FFS":  3.13,
+        "GRN":  7.07,
+        "IND":  0.68,
+        "ANJ":  1.31
+      },
+      "tpp": {
+        "LIB": 55.89,
+        "ALP": 44.11
+      }
+    }
+  },
+  {
+    "name": "Wakefield",
+    "state": "SA",
+    "electors": 101403,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 26.37,
+        "NXT": 20.42,
+        "ALP": 39.82,
+        "FFS": 5.62,
+        "GRN": 4.28,
+        "IND": 2.84,
+        "CDM": 0.65
+      },
+      "tpp": {
+        "LIB": 39.03,
+        "ALP": 60.97
+      }
+    }
   }
 ]

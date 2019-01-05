@@ -113,10 +113,10 @@ class Seat(object):
                 if Parties(party) in to_dist:
                     remaining_candidates[Parties(party)] = np.round(remaining_candidates[Parties(party)] +
                                                                     to_dist[Parties(party)] * votes, 2)
-                else:
-                    if float(remaining_candidates[party]) / float(total) > 0.1:
-                        print remaining_candidates[party], total
-                        raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
+                # else:
+                #     if float(remaining_candidates[party]) / float(total) > 0.1:
+                #         print remaining_candidates[party], total
+                #         raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
         self.logger.info('Runoff for {} complete. Final results: {}'.format(self.name, zip(remaining_candidates.keys(),
                                                                                            remaining_candidates.values())))
         self.winner = max(remaining_candidates, key=remaining_candidates.get)
