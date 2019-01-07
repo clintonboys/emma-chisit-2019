@@ -1721,6 +1721,246 @@
         "ALP": 37.32
       }
     }
+  },
+   {
+    "name": "Gorton",
+    "state": "VIC",
+    "electors": 103358,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 27.83,
+        "ALP": 62.29,
+        "GRN": 9.88
+      },
+      "tpp": {
+        "LIB": 30.53,
+        "ALP": 69.45
+      }
+    }
+  },
+   {
+    "name": "Higgins",
+    "state": "VIC",
+    "electors": 93841,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 52.00,
+        "ALP": 14.95,
+        "GRN": 22.33,
+        "NXT": 2.22,
+        "ANJ": 1.49,
+        "MAR": 1.40,
+        "JUS": 1.40,
+        "LDM": 1.21
+      },
+      "tpp": {
+        "LIB": 57.99,
+        "GRN": 42.01
+      }
+    }
+  },
+   {
+    "name": "Holt",
+    "state": "VIC",
+    "electors": 95903,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 29.89,
+        "ALP": 53.70,
+        "GRN": 6.34,
+        "RUA": 4.43,
+        "FFS": 5.63
+      },
+      "tpp": {
+        "LIB": 35.83,
+        "ALP": 64.17
+      }
+    }
+  },
+   {
+    "name": "Hotham",
+    "state": "VIC",
+    "electors": 90675,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 45.75,
+        "LIB": 37.30,
+        "GRN": 9.23,
+        "ANJ": 2.97,
+        "FFS": 2.42,
+        "RUA": 2.33
+      },
+      "tpp": {
+        "LIB": 42.52,
+        "ALP": 57.48
+      }
+    }
+  },
+   {
+    "name": "Indi",
+    "state": "VIC",
+    "electors": 95903,
+    "type": "rural",
+    "held_by": "IND",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "IND": 34.76,
+        "LIB": 27.61,
+        "NAT": 17.22,
+        "ALP": 9.79,
+        "GRN": 3.82,
+        "COU": 2.07,
+        "IND": 1.95,
+        "RUA": 1.28,
+        "LDM": 0.98,
+        "IND": 0.51
+      },
+      "tpp": {
+        "LIB": 45.17,
+        "IND": 54.83
+      }
+    }
+  },
+   {
+    "name": "Isaacs",
+    "state": "VIC",
+    "electors": 96009,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 40.35,
+        "ALP": 44.49,
+        "GRN": 10.20,
+        "ANJ": 4.96
+      },
+      "tpp": {
+        "LIB": 44.27,
+        "ALP": 55.73
+      }
+    }
+  },
+   {
+    "name": "Jagajaga",
+    "state": "VIC",
+    "electors": 95002,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 41.03,
+        "ALP": 39.21,
+        "GRN": 14.82,
+        "ANJ": 2.42,
+        "FFS": 2.53
+      },
+      "tpp": {
+        "LIB": 45.33,
+        "ALP": 54.67
+      }
+    }
+  },
+   {
+    "name": "Kooyong",
+    "state": "VIC",
+    "electors": 91826,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 58.22,
+        "ALP": 19.80,
+        "GRN": 18.92,
+        "IND": 3.06
+      },
+      "tpp": {
+        "LIB": 63.34,
+        "ALP": 36.66
+      }
+    }
+  },
+     {
+    "name": "La Trobe",
+    "state": "VIC",
+    "electors": 98051,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 42.23,
+        "ALP": 31.37,
+        "GRN": 10.55,
+        "JUS": 4.24,
+        "ANJ": 2.89,
+        "FFS": 2.45,
+        "SEX": 2.27,
+        "SFF": 1.43,
+        "LDM": 1.28,
+        "RUA": 1.27
+      },
+      "tpp": {
+        "LIB": 51.46,
+        "ALP": 48.54
+      }
+    }
+  },
+   {
+    "name": "Lalor",
+    "state": "VIC",
+    "electors": 111840,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 30.98,
+        "ALP": 51.80,
+        "GRN": 9.81,
+        "RUA": 4.39,
+        "AUF": 3.03
+      },
+      "tpp": {
+        "LIB": 36.56,
+        "ALP": 63.44
+      }
+    }
+  },
+   {
+    "name": "Mallee",
+    "state": "VIC",
+    "electors": 111840,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 64.31,
+        "ALP": 21.43,
+        "GRN": 7.11,
+        "RUA": 5.19,
+        "CEC": 1.96
+      },
+      "tpp": {
+        "NAT": 71.32,
+        "ALP": 28.68
+      }
+    }
   }
-
 ]

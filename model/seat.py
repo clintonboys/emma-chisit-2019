@@ -65,7 +65,6 @@ class Seat(object):
 
         total = np.sum(primary_results.values())
         tpp = self.tpp
-        self.logger.info({party: prefs for party, prefs in pref_flows.iteritems()})
         pref_flows = {party: v for party, prefs in pref_flows.iteritems()
                       for k, v in prefs.iteritems() if set(k) == set(tpp)}
         self.logger.debug(pref_flows)
