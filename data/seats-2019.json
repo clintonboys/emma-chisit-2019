@@ -1347,5 +1347,380 @@
         "ALP": 60.97
       }
     }
+  },
+  {
+    "name": "Aston",
+    "state": "VIC",
+    "electors": 89111,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 50.86,
+        "ALP": 31.07,
+        "FFS": 3.23,
+        "GRN": 8.40,
+        "ANJ": 2.58,
+        "IND": 2.46,
+        "CDM": 1.40
+      },
+      "tpp": {
+        "LIB": 58.59,
+        "ALP": 41.41
+      }
+    }
+  },
+  {
+    "name": "Ballarat",
+    "state": "VIC",
+    "electors": 103168,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 34.73,
+        "ALP": 43.27,
+        "NAT": 4.20,
+        "GRN": 10.80,
+        "CHR": 2.07,
+        "FFS": 1.94,
+        "IND": 1.84,
+        "RUA": 1.15
+      },
+      "tpp": {
+        "LIB": 42.68,
+        "ALP": 57.32
+      }
+    }
+  },
+  {
+    "name": "Cooper",
+    "state": "VIC",
+    "electors": 97702,
+    "type": "city",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 19.89,
+        "SEX": 2.57,
+        "ALP": 35.27,
+        "ANJ": 1.67,
+        "GRN": 36.23,
+        "IND": 1.67,
+        "MAR": 0.65,
+        "RNE": 0.66,
+        "IND": 0.53,
+        "CYC": 0.43,
+        "PRO": 0.31
+      },
+      "tpp": {
+        "GRN": 48.97,
+        "ALP": 51.03
+      }
+    }
+  },
+  {
+    "name": "Bendigo",
+    "state": "VIC",
+    "electors": 102208,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 38.35,
+        "LIB": 37.90,
+        "GRN": 11.02,
+        "NAT": 3.63,
+        "FFS": 2.80,
+        "ANJ": 2.20,
+        "RUA": 2.11,
+        "IND": 1.97
+      },
+      "tpp": {
+        "LIB": 46.26,
+        "ALP": 53.74
+      }
+    }
+  },
+  {
+    "name": "Bruce",
+    "state": "VIC",
+    "electors": 87076,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 44.34,
+        "LIB": 40.05,
+        "GRN": 7.10,
+        "FFS": 3.46,
+        "ANJ": 2.34,
+        "DLR": 1.73,
+        "RNE": 0.98
+      },
+      "tpp": {
+        "LIB": 45.92,
+        "ALP": 54.08
+      }
+    }
+  },
+  {
+    "name": "Calwell",
+    "state": "VIC",
+    "electors": 96134,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 56.81,
+        "LIB": 27.66,
+        "GRN": 8.47,
+        "ANJ": 3.59,
+        "IND": 3.47
+      },
+      "tpp": {
+        "LIB": 32.13,
+        "ALP": 67.87
+      }
+    }
+  },
+  {
+    "name": "Casey",
+    "state": "VIC",
+    "electors": 95851,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 49.53,
+        "ALP": 28.37,
+        "GRN": 11.69,
+        "ANJ": 4.53,
+        "IND": 3.12,
+        "RUA": 2.77
+      },
+      "tpp": {
+        "LIB": 56.06,
+        "ALP": 43.94
+      }
+    }
+  },
+  {
+    "name": "Chisholm",
+    "state": "VIC",
+    "electors": 89159,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 45.28,
+        "ALP": 35.93,
+        "GRN": 12.28,
+        "FFS": 2.46,
+        "ANJ": 2.07,
+        "RUA": 1.97
+      },
+      "tpp": {
+        "LIB": 51.24,
+        "ALP": 48.76
+      }
+    }
+  },
+  {
+    "name": "Corangamite",
+    "state": "VIC",
+    "electors": 103598,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 46.42,
+        "ALP": 30.75,
+        "FFS": 1.94,
+        "GRN": 11.45,
+        "JUS": 3.09,
+        "ANJ": 1.77,
+        "IND": 1.54,
+        "DLR": 1.29,
+        "LDM": 0.89,
+        "RUA": 0.86
+      },
+      "tpp": {
+        "LIB": 53.13,
+        "ALP": 46.87
+      }
+    }
+  },
+  {
+    "name": "Corio",
+    "state": "VIC",
+    "electors": 98996,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 35.14,
+        "ALP": 45.63,
+        "GRN": 11.77,
+        "ANJ": 3.12,
+        "RUA": 1.98,
+        "BUL": 1.21,
+        "SOC": 1.17
+      },
+      "tpp": {
+        "LIB": 40.01,
+        "ALP": 59.99
+      }
+    }
+  },
+    {
+    "name": "Deakin",
+    "state": "VIC",
+    "electors": 92739,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 50.03,
+        "ALP": 31.04,
+        "FFS": 2.23,
+        "GRN": 11.73,
+        "ANJ": 2.65,
+        "CHR": 2.32
+      },
+      "tpp": {
+        "LIB": 55.68,
+        "ALP": 44.32
+      }
+    }
+  },
+  {
+    "name": "Dunkley",
+    "state": "VIC",
+    "electors": 95444,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 42.73,
+        "ALP": 33.17,
+        "FFS": 1.56,
+        "GRN": 9.65,
+        "JUS": 6.17,
+        "ANJ": 2.16,
+        "IND": 1.27,
+        "LDM": 1.16,
+        "RUA": 0.76,
+        "CHR": 0.76,
+        "ART": 0.61
+      },
+      "tpp": {
+        "LIB": 51.43,
+        "ALP": 48.57
+      }
+    }
+  },
+  {
+    "name": "Flinders",
+    "state": "VIC",
+    "electors": 105437,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 51.60,
+        "ALP": 27.03,
+        "GRN": 10.70,
+        "ANJ": 4.28,
+        "IND": 3.06,
+        "RUA": 3.33
+      },
+      "tpp": {
+        "LIB": 57.77,
+        "ALP": 42.23
+      }
+    }
+  },
+    {
+    "name": "Gellibrand",
+    "state": "VIC",
+    "electors": 96285,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 26.63,
+        "ALP": 46.90,
+        "GRN": 21.48,
+        "IND": 4.99
+      },
+      "tpp": {
+        "LIB": 31.77,
+        "ALP": 68.23
+      }
+    }
+  },
+  {
+    "name": "Gippsland",
+    "state": "VIC",
+    "electors": 95880,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 56.34,
+        "ALP": 20.01,
+        "FFS": 3.44,
+        "GRN": 7.84,
+        "LDM": 4.98,
+        "IND": 1.77,
+        "RUA": 1.69,
+        "RNE": 1.55,
+        "IND": 1.54,
+        "CHR": 0.84
+      },
+      "tpp": {
+        "NAT": 68.43,
+        "ALP": 31.57
+      }
+    }
+  },
+   {
+    "name": "Goldstein",
+    "state": "VIC",
+    "electors": 95903,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 56.33,
+        "ALP": 21.88,
+        "GRN": 15.90,
+        "ANJ": 2.38,
+        "DLR": 1.86,
+        "FFS": 1.66
+      },
+      "tpp": {
+        "LIB": 62.68,
+        "ALP": 37.32
+      }
+    }
   }
+
 ]

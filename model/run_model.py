@@ -149,10 +149,25 @@ DEFAULT_PREF_FLOW = {Parties.GRN: {(Parties.ALP, Parties.LIB):
                                        {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
                                    (Parties.ALP, Parties.NAT):
                                        {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
+                     Parties.PRO: {(Parties.ALP, Parties.LIB):
+                                       {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
+                                   (Parties.ALP, Parties.NAT):
+                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
+                     Parties.MAR: {(Parties.ALP, Parties.LIB):
+                                       {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
+                                   (Parties.ALP, Parties.NAT):
+                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
                      Parties.APD: {(Parties.ALP, Parties.LIB):
                                        {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
                                    (Parties.ALP, Parties.NAT):
-                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}}
+                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00},
+                                   Parties.CHR: {(Parties.ALP, Parties.LIB):
+                                                     {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00,
+                                                      Parties.NXT: 0.00},
+                                                 (Parties.ALP, Parties.NAT):
+                                                     {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00,
+                                                      Parties.NXT: 0.00}}}
+
                      }
 NUM_ITERATIONS = 1
 PREVIOUS_ELECTION_RESULTS = {Parties.ALP: 34.73, Parties.LIB: 42.04, Parties.GRN: 10.23,
