@@ -160,13 +160,13 @@ DEFAULT_PREF_FLOW = {Parties.GRN: {(Parties.ALP, Parties.LIB):
                      Parties.APD: {(Parties.ALP, Parties.LIB):
                                        {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
                                    (Parties.ALP, Parties.NAT):
-                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00},
-                                   Parties.CHR: {(Parties.ALP, Parties.LIB):
-                                                     {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00,
-                                                      Parties.NXT: 0.00},
-                                                 (Parties.ALP, Parties.NAT):
-                                                     {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00,
-                                                      Parties.NXT: 0.00}}}
+                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
+                     Parties.CHR: {(Parties.ALP, Parties.LIB):
+                                     {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00,
+                                      Parties.NXT: 0.00},
+                                 (Parties.ALP, Parties.NAT):
+                                     {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00,
+                                      Parties.NXT: 0.00}}
 
                      }
 NUM_ITERATIONS = 1
