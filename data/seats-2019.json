@@ -1962,5 +1962,241 @@
         "ALP": 28.68
       }
     }
+  },
+   {
+    "name": "Maribyrnong",
+    "state": "VIC",
+    "electors": 111840,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 50.52,
+        "LIB": 32.27,
+        "GRN": 9.75,
+        "IND": 3.38,
+        "ANJ": 2.32,
+        "CHR": 1.76
+      },
+      "tpp": {
+        "ALP": 62.31,
+        "LIB": 37.69
+      }
+    }
+  },
+   {
+    "name": "McEwen",
+    "state": "VIC",
+    "electors": 120389,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 44.69,
+        "LIB": 33.70,
+        "GRN": 7.58,
+        "FFS": 3.27,
+        "IND": 2.66,
+        "ANJ": 2.65,
+        "NAT": 2.36,
+        "RUA": 1.65,
+        "COU": 1.43
+      },
+      "tpp": {
+        "LIB": 42.15,
+        "ALP": 57.85
+      }
+    }
+  },
+   {
+    "name": "McMillan",
+    "state": "VIC",
+    "electors": 107036,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 47.86,
+        "ALP": 29.26,
+        "GRN": 9.72,
+        "FFS": 3.39,
+        "ANJ": 2.99,
+        "RUA": 2.76,
+        "LDM": 2.27,
+        "CHR": 1.74
+      },
+      "tpp": {
+        "LIB": 56.03,
+        "ALP": 43.97
+      }
+    }
+  },
+   {
+    "name": "Melbourne",
+    "state": "VIC",
+    "electors": 96983,
+    "type": "city",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "GRN": 43.75,
+        "LIB": 25.25,
+        "ALP": 24.46,
+        "SEX": 3.45,
+        "ANJ": 1.84,
+        "DLR": 1.26
+      },
+      "tpp": {
+        "GRN": 68.48,
+        "LIB": 31.52
+      }
+    }
+  },
+   {
+    "name": "Macnamara",
+    "state": "VIC",
+    "electors": 88565,
+    "type": "city",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 41.90,
+        "ALP": 27.00,
+        "GRN": 23.79,
+        "ANJ": 1.99,
+        "IND": 1.64,
+        "MAR": 1.59,
+        "DLR": 1.59,
+        "IND": 0.50
+      },
+      "tpp": {
+        "LIB": 48.62,
+        "ALP": 51.38
+      }
+    }
+  },
+   {
+    "name": "Menzies",
+    "state": "VIC",
+    "electors": 91872,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 51.72,
+        "ALP": 24.60,
+        "GRN": 9.08,
+        "IND": 6.72,
+        "FFS": 3.26,
+        "ANJ": 2.67,
+        "VOL": 1.12,
+        "IND": 0.84
+      },
+      "tpp": {
+        "LIB": 60.56,
+        "ALP": 39.44
+      }
+    }
+  },
+   {
+    "name": "Murray",
+    "state": "VIC",
+    "electors": 96546,
+    "type": "rural",
+    "held_by": "NAT",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "NAT": 35.34,
+        "LIB": 32.03,
+        "ALP": 14.98,
+        "GRN": 4.41,
+        "COU": 4.04,
+        "IND": 3.78,
+        "IND": 1.67,
+        "RUA": 1.36,
+        "IND": 1.18,
+        "IND": 0.96,
+        "CEC": 0.26
+      },
+      "tpp": {
+        "NAT": 55.13,
+        "LIB": 44.87
+      }
+    }
+  },
+   {
+    "name": "Scullin",
+    "state": "VIC",
+    "electors": 100842,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 57.00,
+        "NAT": 28.49,
+        "GRN": 7.62,
+        "ANJ": 3.54,
+        "DLR": 3.34
+      },
+      "tpp": {
+        "ALP": 67.28,
+        "ALP": 32.72
+      }
+    }
+  },
+   {
+    "name": "Wannon",
+    "state": "VIC",
+    "electors": 92936,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 53.23,
+        "ALP": 30.71,
+        "GRN": 8.14,
+        "IND": 4.54,
+        "IND": 3.38
+      },
+      "tpp": {
+        "LIB": 58.96,
+        "ALP": 41.04
+      }
+    }
+  },
+   {
+    "name": "Wills",
+    "state": "VIC",
+    "electors": 111840,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 37.65,
+        "GRN": 30.83,
+        "LIB": 21.93,
+        "SEX": 2.77,
+        "IND": 1.95,
+        "ANJ": 1.68,
+        "DLR": 1.37,
+        "RNE": 0.83,
+        "SOC": 0.69,
+        "SOE": 0.31
+      },
+      "tpp": {
+        "GRN": 45.12,
+        "ALP": 54.88
+      }
+    }
   }
 ]

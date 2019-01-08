@@ -48,7 +48,9 @@ class Parties(Enum):
     SFF = "SFF"
     SMR = "SMR"
     SOC = "SOC"
+    SOE = "SOE"
     SUS = "SUS"
+    VOL = "VOL"
 
 
 def load_fundamentals_index():
