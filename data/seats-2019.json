@@ -2968,5 +2968,459 @@
         "ALP": 40.38
       }
     }
+  },
+  {
+    "name": "Brand",
+    "state": "WA",
+    "electors": 85320,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 47.48,
+        "LIB": 31.62,
+        "GRN": 11.68,
+        "RUA": 5.76,
+        "CHR": 3.46
+      },
+      "tpp": {
+        "LIB": 38.57,
+        "ALP": 61.43
+      }
+    }
+  },
+  {
+    "name": "Burt",
+    "state": "WA",
+    "electors": 88261,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 47.03,
+        "LIB": 35.37,
+        "GRN": 8.03,
+        "CHR": 5.15,
+        "SFF": 4.43
+      },
+      "tpp": {
+        "LIB": 42.89,
+        "ALP": 57.11
+      }
+    }
+  },
+  {
+    "name": "Canning",
+    "state": "WA",
+    "electors": 88237,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 33.04,
+        "LIB": 50.30,
+        "GRN": 8.74,
+        "NAT": 4.24,
+        "CHR": 3.68
+      },
+      "tpp": {
+        "LIB": 56.79,
+        "ALP": 43.21
+      }
+    }
+  },
+  {
+    "name": "Cowan",
+    "state": "WA",
+    "electors": 86208,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 41.68,
+        "LIB": 42.22,
+        "GRN": 7.60,
+        "CHR": 3.29,
+        "SFF": 2.81,
+        "LDM": 1.34,
+        "MAT": 1.07
+      },
+      "tpp": {
+        "LIB": 49.32,
+        "ALP": 50.68
+      }
+    }
+  },
+  {
+    "name": "Curtin",
+    "state": "WA",
+    "electors": 92298,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 15.71,
+        "LIB": 65.50,
+        "GRN": 14.20,
+        "IND": 2.79,
+        "LBA": 1.80
+      },
+      "tpp": {
+        "LIB": 70.70,
+        "ALP": 29.30
+      }
+    }
+  },
+  {
+    "name": "Durack",
+    "state": "WA",
+    "electors": 79811,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 25.90,
+        "LIB": 41.74,
+        "NAT": 15.98,
+        "GRN": 10.05,
+        "RUA": 3.76,
+        "CHR": 2.56
+      },
+      "tpp": {
+        "LIB": 61.06,
+        "ALP": 38.94
+      }
+    }
+  },
+  {
+    "name": "Forrest",
+    "state": "WA",
+    "electors": 89960,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 23.14,
+        "LIB": 49.44,
+        "GRN": 11.97,
+        "NAT": 5.08,
+        "IND": 3.42,
+        "OUT": 2.80,
+        "CHR": 2.19,
+        "RUA": 1.95
+      },
+      "tpp": {
+        "LIB": 62.56,
+        "ALP": 37.44
+      }
+    }
+  },
+  {
+    "name": "Fremantle",
+    "state": "WA",
+    "electors": 88411,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 40.99,
+        "LIB": 36.87,
+        "GRN": 17.74,
+        "SOC": 1.65,
+        "MAT": 2.75
+      },
+      "tpp": {
+        "LIB": 42.48,
+        "ALP": 57.52
+      }
+    }
+  },
+  {
+    "name": "Hasluck",
+    "state": "WA",
+    "electors": 84676,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 35.26,
+        "LIB": 44.95,
+        "RUA": 3.69,
+        "GRN": 12.66,
+        "CHR": 3.44
+      },
+      "tpp": {
+        "LIB": 52.05,
+        "ALP": 47.95
+      }
+    }
+  },
+  {
+    "name": "Moore",
+    "state": "WA",
+    "electors": 90436,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 28.69,
+        "LIB": 54.98,
+        "GRN": 12.68,
+        "CHR": 3.65
+      },
+      "tpp": {
+        "LIB": 61.02,
+        "ALP": 38.98
+      }
+    }
+  },
+  {
+    "name": "O'Connor",
+    "state": "WA",
+    "electors": 90373,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 20.92,
+        "LIB": 42.67,
+        "NAT": 18.33,
+        "GRN": 10.37,
+        "CHR": 4.02,
+        "RUA": 3.69
+      },
+      "tpp": {
+        "LIB": 65.04,
+        "ALP": 34.96
+      }
+    }
+  },
+  {
+    "name": "Pearce",
+    "state": "WA",
+    "electors": 92298,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 34.25,
+        "LIB": 45.44,
+        "NAT": 4.69,
+        "GRN": 10.96,
+        "RUA": 4.65
+      },
+      "tpp": {
+        "LIB": 53.63,
+        "ALP": 46.37
+      }
+    }
+  },
+  {
+    "name": "Perth",
+    "state": "WA",
+    "electors": 92298,
+    "type": "city",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 37.36,
+        "LIB": 42.31,
+        "LDM": 1.71,
+        "GRN": 17.07,
+        "ODD": 1.55
+      },
+      "tpp": {
+        "LIB": 46.67,
+        "ALP": 53.33
+      }
+    }
+  },
+  {
+    "name": "Stirling",
+    "state": "WA",
+    "electors": 86478,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 32.17,
+        "LIB": 49.45,
+        "GRN": 11.68,
+        "IND": 2.62,
+        "CHR": 2.44,
+        "RUA": 1.64
+      },
+      "tpp": {
+        "LIB": 56.12,
+        "ALP": 43.88
+      }
+    }
+  },
+  {
+    "name": "Swan",
+    "state": "WA",
+    "electors": 92298,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 33.01,
+        "LIB": 48.18,
+        "CHR": 3.79,
+        "GRN": 15.02
+      },
+      "tpp": {
+        "LIB": 53.59,
+        "ALP": 46.41
+      }
+    }
+  },
+  {
+    "name": "Tangney",
+    "state": "WA",
+    "electors": 85748,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 23.55,
+        "LIB": 48.81,
+        "GRN": 12.39,
+        "IND": 11.88,
+        "CHR": 3.37
+      },
+      "tpp": {
+        "LIB": 61.07,
+        "ALP": 38.93
+      }
+    }
+  },
+  {
+    "name": "Canberra",
+    "state": "ACT",
+    "electors": 132310,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 42.80,
+        "LIB": 37.61,
+        "GRN": 14.92,
+        "BUL": 4.67
+      },
+      "tpp": {
+        "LIB": 41.54,
+        "ALP": 58.46
+      }
+    }
+  },
+  {
+    "name": "Fenner",
+    "state": "ACT",
+    "electors": 127617,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 45.80,
+        "LIB": 31.39,
+        "GRN": 15.26,
+        "IND": 3.80,
+        "BUL": 3.76
+      },
+      "tpp": {
+        "LIB": 36.11,
+        "ALP": 63.89
+      }
+    }
+  },
+  {
+    "name": "Bean",
+    "state": "ACT",
+    "electors": 85748,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 54.45,
+        "LIB": 45.55
+      },
+      "tpp": {
+        "LIB": 45.55,
+        "ALP": 54.45
+      }
+    }
+  },
+  {
+    "name": "Lingiari",
+    "state": "NT",
+    "electors": 46525,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 39.78,
+        "LIB": 31.73,
+        "GRN": 7.71,
+        "SFF": 7.14,
+        "IND": 4.32,
+        "IND": 4.22,
+        "RUA": 3.49,
+        "IND": 1.00,
+        "CEC": 0.61
+      },
+      "tpp": {
+        "LIB": 41.58,
+        "ALP": 58.42
+      }
+    }
+  },
+  {
+    "name": "Solomon",
+    "state": "NT",
+    "electors": 58665,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 23.55,
+        "LIB": 48.81,
+        "GRN": 12.39,
+        "IND": 11.88,
+        "SFF": 3.37,
+        "LDM": 2.34,
+        "HMP": 2.09,
+        "RUA": 1.80,
+        "AUF": 1.46,
+        "ODD": 0.68,
+        "CEC": 0.34
+      },
+      "tpp": {
+        "LIB": 44.00,
+        "ALP": 56.00
+      }
+    }
   }
+
 ]
