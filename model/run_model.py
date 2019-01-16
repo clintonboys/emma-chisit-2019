@@ -169,6 +169,18 @@ DEFAULT_PREF_FLOW = {Parties.GRN: {(Parties.ALP, Parties.LIB):
                                        {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
                                    (Parties.ALP, Parties.NAT):
                                        {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
+                     Parties.RFS: {(Parties.ALP, Parties.LIB):
+                                       {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
+                                   (Parties.ALP, Parties.NAT):
+                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
+                     Parties.GLZ: {(Parties.ALP, Parties.LIB):
+                                       {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
+                                   (Parties.ALP, Parties.NAT):
+                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
+                     Parties.CON: {(Parties.ALP, Parties.LIB):
+                                       {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00, Parties.NXT: 0.00},
+                                   (Parties.ALP, Parties.NAT):
+                                       {Parties.ALP: 0.40, Parties.NAT: 0.60, Parties.GRN: 0.00, Parties.NXT: 0.00}},
                      Parties.CHR: {(Parties.ALP, Parties.LIB):
                                      {Parties.ALP: 0.50, Parties.LIB: 0.50, Parties.GRN: 0.00,
                                       Parties.NXT: 0.00},
@@ -209,6 +221,7 @@ def main():
         i += 1
         results = pd.DataFrame.from_dict(results_dict)
         results.to_csv('/Users/clinton/Documents/dev/emma-chisit-2019/data/iteration{}.csv'.format(i))
+        print results.groupby('winner').agg('count')
 
 
 if __name__ == '__main__':

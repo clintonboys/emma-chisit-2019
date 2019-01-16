@@ -2198,5 +2198,775 @@
         "ALP": 54.88
       }
     }
+  },
+   {
+    "name": "Bass",
+    "state": "TAS",
+    "electors": 68904,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 40.50,
+        "LIB": 38.70,
+        "GRN": 10.81,
+        "RFS": 4.88,
+        "CDM": 2.67,
+        "RNE": 2.44
+      },
+      "tpp": {
+        "ALP": 56.09,
+        "ALP": 43.91
+      }
+    }
+  },
+   {
+    "name": "Braddon",
+    "state": "TAS",
+    "electors": 66584,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "LIB": 40.05,
+        "ALP": 41.50,
+        "GRN": 6.74,
+        "RFS": 5.72,
+        "LDM": 2.13,
+        "RNE": 2.08,
+        "CDM": 1.78
+      },
+      "tpp": {
+        "ALP": 52.20,
+        "LIB": 47.80
+      }
+    }
+  },
+   {
+    "name": "Clark",
+    "state": "TAS",
+    "electors": 68656,
+    "type": "suburban",
+    "held_by": "IND",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "IND": 44.07,
+        "ALP": 23.01,
+        "LIB": 19.90,
+        "GRN": 10.60,
+        "CDM": 1.47,
+        "DLP": 0.95
+      },
+      "tpp": {
+        "IND": 67.78,
+        "ALP": 32.22
+      }
+    }
+  },
+   {
+    "name": "Franklin",
+    "state": "TAS",
+    "electors": 72060,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 47.01,
+        "LIB": 35.26,
+        "GRN": 13.35,
+        "ART": 2.40,
+        "CDM": 1.98
+      },
+      "tpp": {
+        "LIB": 39.28,
+        "ALP": 60.72
+      }
+    }
+  },
+   {
+    "name": "Lyons",
+    "state": "TAS",
+    "electors": 111840,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 38.57,
+        "LIB": 41.88,
+        "GRN": 9.37,
+        "RFS": 6.31,
+        "RNE": 2.30,
+        "CDM": 1.57
+      },
+      "tpp": {
+        "LIB": 47.69,
+        "ALP": 52.31
+      }
+    }
+  },
+   {
+    "name": "Blair",
+    "state": "QLD",
+    "electors": 90307,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 41.90,
+        "LIB": 28.71,
+        "ONP": 15.58,
+        "GRN": 6.18,
+        "FFS": 2.82,
+        "IND": 2.25,
+        "IND": 1.69,
+        "IND": 0.87
+      },
+      "tpp": {
+        "LIB": 41.12,
+        "ALP": 58.88
+      }
+    }
+  },
+   {
+    "name": "Bonner",
+    "state": "QLD",
+    "electors": 92747,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 34.86,
+        "LIB": 46.44,
+        "GRN": 9.47,
+        "FFS": 3.51,
+        "LDM": 3.05,
+        "IND": 2.66
+      },
+      "tpp": {
+        "LIB": 53.39,
+        "ALP": 46.61
+      }
+    }
+  },
+   {
+    "name": "Bowman",
+    "state": "QLD",
+    "electors": 111840,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 32.05,
+        "LIB": 49.77,
+        "GRN": 9.76,
+        "FFS": 4.83,
+        "LBA": 3.59
+      },
+      "tpp": {
+        "LIB": 57.07,
+        "ALP": 42.93
+      }
+    }
+  },
+   {
+    "name": "Brisbane",
+    "state": "QLD",
+    "electors": 96529,
+    "type": "suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 26.00,
+        "LIB": 49.85,
+        "GRN": 19.40,
+        "LDM": 2.08,
+        "FFS": 1.69,
+        "DFV": 0.97
+      },
+      "tpp": {
+        "LIB": 55.92,
+        "ALP": 44.08
+      }
+    }
+  },
+   {
+    "name": "Capricornia",
+    "state": "QLD",
+    "electors": 91397,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 38.09,
+        "LIB": 40.05,
+        "KAP": 7.08,
+        "FFS": 5.16,
+        "IND": 4.89,
+        "GRN": 4.73
+      },
+      "tpp": {
+        "LIB": 50.63,
+        "ALP": 49.37
+      }
+    }
+  },
+   {
+    "name": "Dawson",
+    "state": "QLD",
+    "electors": 94609,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 32.79,
+        "LIB": 42.61,
+        "KAP": 6.54,
+        "GRN": 5.15,
+        "IND": 4.63,
+        "GLZ": 4.51,
+        "FFS": 3.77
+      },
+      "tpp": {
+        "LIB": 53.34,
+        "ALP": 46.66
+      }
+    }
+  },
+   {
+    "name": "Dickson",
+    "state": "QLD",
+    "electors": 94105,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 34.94,
+        "LIB": 44.56,
+        "GRN": 9.87,
+        "FFS": 4.25,
+        "IND": 3.54,
+        "LDM": 2.85
+      },
+      "tpp": {
+        "LIB": 51.60,
+        "ALP": 48.40
+      }
+    }
+  },
+   {
+    "name": "Fairfax",
+    "state": "QLD",
+    "electors": 98609,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 20.61,
+        "LIB": 48.44,
+        "GRN": 12.62,
+        "ONP": 9.74,
+        "IND": 3.12,
+        "FFS": 2.65,
+        "IND": 2.15,
+        "ODD": 0.67
+      },
+      "tpp": {
+        "LIB": 60.89,
+        "ALP": 39.11
+      }
+    }
+  },
+   {
+    "name": "Fisher",
+    "state": "QLD",
+    "electors": 89922,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 24.68,
+        "LIB": 48.26,
+        "GRN": 12.33,
+        "LBA": 3.52,
+        "FFS": 3.49,
+        "IND": 3.47,
+        "RUA": 2.64,
+        "DFV": 1.09,
+        "ODD": 0.52
+      },
+      "tpp": {
+        "LIB": 59.06,
+        "ALP": 40.94
+      }
+    }
+  },
+   {
+    "name": "Flynn",
+    "state": "QLD",
+    "electors": 92901,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 33.39,
+        "LIB": 37.06,
+        "ONP": 17.15,
+        "KAP": 3.38,
+        "GRN": 2.77,
+        "FFS": 2.49,
+        "IND": 2.21,
+        "IND": 0.99,
+        "IND": 0.55
+      },
+      "tpp": {
+        "LIB": 51.04,
+        "ALP": 48.96
+      }
+    }
+  },
+   {
+    "name": "Forde",
+    "state": "QLD",
+    "electors": 111840,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 37.64,
+        "LIB": 40.63,
+        "GRN": 6.43,
+        "IND": 6.25,
+        "FFS": 5.59,
+        "LBA": 3.46
+      },
+      "tpp": {
+        "LIB": 50.63,
+        "ALP": 49.37
+      }
+    }
+  },
+   {
+    "name": "Griffith",
+    "state": "QLD",
+    "electors": 111840,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 41.00,
+        "LIB": 33.18,
+        "GRN": 17.08,
+        "LDM": 2.04,
+        "DLR": 1.94,
+        "LBA": 1.61,
+        "IND": 1.59,
+        "FFS": 1.55
+      },
+      "tpp": {
+        "LIB": 48.40,
+        "ALP": 51.60
+      }
+    }
+  },
+   {
+    "name": "Groom",
+    "state": "QLD",
+    "electors": 94627,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 22.20,
+        "LIB": 54.00,
+        "GRN": 6.16,
+        "FFS": 10.02,
+        "NXT": 7.63
+      },
+      "tpp": {
+        "LIB": 65.31,
+        "ALP": 34.69
+      }
+    }
+  },
+   {
+    "name": "Herbert",
+    "state": "QLD",
+    "electors": 94862,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 30.45,
+        "LIB": 35.50,
+        "ONP": 13.53,
+        "KAP": 6.87,
+        "GRN": 6.26,
+        "FFS": 3.59,
+        "GLZ": 2.19,
+        "LDM": 1.24,
+        "PUP": 0.36
+      },
+      "tpp": {
+        "LIB": 49.98,
+        "ALP": 50.02
+      }
+    }
+  },
+   {
+    "name": "Hinkler",
+    "state": "QLD",
+    "electors": 92927,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 26.70,
+        "LIB": 43.86,
+        "GRN": 3.92,
+        "ONP": 19.16,
+        "FFS": 2.54,
+        "IND": 1.94,
+        "LBA": 1.88
+      },
+      "tpp": {
+        "LIB": 58.42,
+        "ALP": 41.58
+      }
+    }
+  },
+   {
+    "name": "Kennedy",
+    "state": "QLD",
+    "electors": 89428,
+    "type": "rural",
+    "held_by": "KAP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 19.16,
+        "LIB": 32.33,
+        "GRN": 4.90,
+        "KAP": 39.85,
+        "FFS": 3.76
+      },
+      "tpp": {
+        "LIB": 38.88,
+        "KAP": 61.12
+      }
+    }
+  },
+   {
+    "name": "Leichhardt",
+    "state": "QLD",
+    "electors": 95820,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 28.08,
+        "LIB": 39.49,
+        "GRN": 8.67,
+        "ONP": 7.63,
+        "IND": 6.86,
+        "KAP": 4.32,
+        "FFS": 2.54,
+        "RUA": 1.62,
+        "IND": 0.78
+      },
+      "tpp": {
+        "LIB": 53.95,
+        "ALP": 46.05
+      }
+    }
+  },
+   {
+    "name": "Lilley",
+    "state": "QLD",
+    "electors": 99050,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 43.49,
+        "LIB": 39.05,
+        "GRN": 11.58,
+        "FFS": 3.59,
+        "LDM": 2.29
+      },
+      "tpp": {
+        "LIB": 44.68,
+        "ALP": 55.32
+      }
+    }
+  },
+   {
+    "name": "Longman",
+    "state": "QLD",
+    "electors": 96285,
+    "type": "rural",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 35.38,
+        "LIB": 39.01,
+        "GRN": 4.39,
+        "ONP": 9.42,
+        "FFS": 3.41,
+        "DLR": 3.04,
+        "KAP": 1.81,
+        "IND": 1.26,
+        "IND": 1.07
+      },
+      "tpp": {
+        "LIB": 49.21,
+        "ALP": 50.79
+      }
+    }
+  },
+   {
+    "name": "Maranoa",
+    "state": "QLD",
+    "electors": 95318,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 18.27,
+        "LIB": 49.19,
+        "ONP": 17.82,
+        "KAP": 4.78,
+        "GRN": 3.39,
+        "FFS": 3.23,
+        "COM": 2.38,
+        "RUA": 0.93
+      },
+      "tpp": {
+        "LIB": 65.86,
+        "ONP": 34.14
+      }
+    }
+  },
+   {
+    "name": "McPherson",
+    "state": "QLD",
+    "electors": 92877,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 26.00,
+        "LIB": 53.29,
+        "GRN": 10.28,
+        "FFS": 6.09,
+        "IND": 4.34
+      },
+      "tpp": {
+        "LIB": 61.64,
+        "ALP": 38.36
+      }
+    }
+  },
+   {
+    "name": "Moncrieff",
+    "state": "QLD",
+    "electors": 89971,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 24.38,
+        "LIB": 58.97,
+        "GRN": 10.12,
+        "FFS": 6.54
+      },
+      "tpp": {
+        "LIB": 64.94,
+        "ALP": 35.06
+      }
+    }
+  },
+   {
+    "name": "Moreton",
+    "state": "QLD",
+    "electors": 88589,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 36.90,
+        "LIB": 37.79,
+        "GRN": 12.73,
+        "NXT": 4.79,
+        "LDM": 3.28,
+        "FFS": 2.95,
+        "KAP": 1.56
+      },
+      "tpp": {
+        "LIB": 45.98,
+        "ALP": 54.02
+      }
+    }
+  },
+   {
+    "name": "Oxley",
+    "state": "QLD",
+    "electors": 95318,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 46.09,
+        "LIB": 32.08,
+        "GRN": 8.76,
+        "ONP": 8.42,
+        "FFS": 3.28,
+        "KAP": 1.36
+      },
+      "tpp": {
+        "LIB": 40.92,
+        "ALP": 59.08
+      }
+    }
+  },
+   {
+    "name": "Petrie",
+    "state": "QLD",
+    "electors": 96679,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 44.70,
+        "LIB": 38.38,
+        "GRN": 7.37,
+        "FFS": 5.11,
+        "LDM": 3.10,
+        "ART": 1.34
+      },
+      "tpp": {
+        "LIB": 51.65,
+        "ALP": 48.35
+      }
+    }
+  },
+   {
+    "name": "Rankin",
+    "state": "QLD",
+    "electors": 90648,
+    "type": "outer-suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 49.34,
+        "LIB": 28.63,
+        "GRN": 6.29,
+        "FFS": 5.87,
+        "LDM": 4.11,
+        "KAP": 3.36,
+        "CON": 2.40
+      },
+      "tpp": {
+        "LIB": 38.70,
+        "ALP": 61.30
+      }
+    }
+  },
+   {
+    "name": "Ryan",
+    "state": "QLD",
+    "electors": 97082,
+    "type": "outer-suburban",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 22.79,
+        "LIB": 52.13,
+        "GRN": 18.75,
+        "FFS": 2.52,
+        "LDM": 2.16,
+        "DLP": 1.65
+      },
+      "tpp": {
+        "LIB": 59.09,
+        "ALP": 40.91
+      }
+    }
+  },
+  {
+    "name": "Wide Bay",
+    "state": "QLD",
+    "electors": 95318,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 22.58,
+        "LIB": 43.80,
+        "ONP": 15.60,
+        "GRN": 8.18,
+        "GLZ": 4.54,
+        "FFS": 2.67,
+        "KAP": 2.62
+      },
+      "tpp": {
+        "LIB": 58.14,
+        "ALP": 41.86
+      }
+    }
+  },
+  {
+    "name": "Wright",
+    "state": "QLD",
+    "electors": 92298,
+    "type": "rural",
+    "held_by": "LIB",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 22.77,
+        "LIB": 41.82,
+        "ONP": 20.90,
+        "GRN": 7.66,
+        "FFS": 3.58,
+        "LDM": 2.24,
+        "MAT": 1.02
+      },
+      "tpp": {
+        "LIB": 59.62,
+        "ALP": 40.38
+      }
+    }
   }
 ]
