@@ -3312,6 +3312,24 @@
     }
   },
   {
+    "name": "Bean",
+    "state": "ACT",
+    "electors": 85748,
+    "type": "suburban",
+    "held_by": "ALP",
+    "candidates": [],
+    "last_result": {
+      "primary": {
+        "ALP": 54.45,
+        "LIB": 45.55
+      },
+      "tpp": {
+        "LIB": 45.55,
+        "ALP": 54.45
+      }
+    }
+  },
+  {
     "name": "Canberra",
     "state": "ACT",
     "electors": 132310,
@@ -3349,24 +3367,6 @@
       "tpp": {
         "LIB": 36.11,
         "ALP": 63.89
-      }
-    }
-  },
-  {
-    "name": "Bean",
-    "state": "ACT",
-    "electors": 85748,
-    "type": "suburban",
-    "held_by": "ALP",
-    "candidates": [],
-    "last_result": {
-      "primary": {
-        "ALP": 54.45,
-        "LIB": 45.55
-      },
-      "tpp": {
-        "LIB": 45.55,
-        "ALP": 54.45
       }
     }
   },
