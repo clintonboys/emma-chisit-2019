@@ -1,0 +1,64 @@
+[
+  {
+    "runoff_type": "ALP_LIB",
+    "default_pref_flow": {"ALP": 0.5, "LIB": 0.5},
+    "pref_flow": {
+      "GRN": {
+        "ALP": 0.85,
+        "LIB": 0.15
+      },
+      "FFS": {
+        "ALP": 0.85,
+        "LIB": 0.15
+      },
+      "IND": {
+        "ALP": 0.85,
+        "LIB": 0.15
+      },
+      "ONP": {
+        "ALP": 0.85,
+        "LIB": 0.15
+      },
+      "OTH": {
+        "ALP": 0.85,
+        "LIB": 0.15
+      },
+      "NXT": {
+        "ALP": 0.85,
+        "LIB": 0.15
+      },
+    }
+  },
+  {
+    "runoff_type": "ALP_NAT",
+    "default_pref_flow": {"ALP": 0.5, "NAT": 0.5},
+    "pref_flow": {
+      "GRN": {
+        "ALP": 0.85,
+        "NAT": 0.15
+      },
+      "CDM": {
+        "ALP": 0.85,
+        "NAT": 0.15
+      }
+    }
+  },
+  {
+    "runoff_type": "NAT_IND",
+    "default_pref_flow": {"NAT": 0.5, "IND": 0.5},
+    "pref_flow": {
+      "LIB": {
+        "NAT": 1.00,
+        "IND": 0.00
+      },
+      "ALP": {
+        "IND": 0.85,
+        "NAT": 0.15
+      },
+      "GRN": {
+        "IND": 0.85,
+        "NAT": 0.15
+      }
+    }
+  }
+]

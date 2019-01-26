@@ -1,6 +1,7 @@
 import json
 import numpy as np
-from utils import Parties
+from enum import Enum
+from utils import Parties, RunoffType
 
 
 def load_seats(seats_config_file, logger):
@@ -35,7 +36,9 @@ class Seat(object):
         self.last_result = last_result
         self.logger = logger
         self.winner = None
+        self.loser = None
         self.winning_margin = 0
+        self.losing_margin = 0
 
     def runoff(self, primary_results, pref_flows):
         """
@@ -65,8 +68,32 @@ class Seat(object):
 
         total = np.sum(primary_results.values())
         tpp = self.tpp
-        pref_flows = {party: v for party, prefs in pref_flows.iteritems()
-                      for k, v in prefs.iteritems() if set(k) == set(tpp)}
+
+        # TODO: Make the runoff types enum compatible with the parties
+        #  enum to reduce the number of lines of code here.
+        runoff_type = None
+        if set(tpp) == {Parties.ALP, Parties.LIB}:
+            runoff_type = RunoffType.ALP_LIB
+        if set(tpp) == {Parties.ALP, Parties.NAT}:
+            runoff_type = RunoffType.ALP_NAT
+        elif set(tpp) == {Parties.ALP, Parties.GRN}:
+            runoff_type = RunoffType.ALP_GRN
+        elif set(tpp) == {Parties.ALP, Parties.IND}:
+            runoff_type = RunoffType.ALP_IND
+        elif set(tpp) == {Parties.LIB, Parties.IND}:
+            runoff_type = RunoffType.LIB_IND
+        elif set(tpp) == {Parties.LIB, Parties.GRN}:
+            runoff_type = RunoffType.LIB_GRN
+        elif set(tpp) == {Parties.NAT, Parties.IND}:
+            runoff_type = RunoffType.NAT_IND
+
+        if runoff_type is None:
+            self.logger.info('Runoff candidates not supported. ')
+            raise NotImplementedError
+        else:
+            self.logger.info('Runoff between {}'.format(runoff_type))
+
+        pref_flows = pref_flows[runoff_type.name]
         self.logger.debug(pref_flows)
         try:
             del primary_results['Informal']
@@ -78,14 +105,15 @@ class Seat(object):
 
         while len(remaining_candidates) > 2:
             self.logger.debug('Runoff for {}, round #{}. Current candidates: {}'.format(self.name,
-                                                                                       round_no + 1,
-                                                                                       zip(remaining_candidates.keys(),
-                                                                                           remaining_candidates.values()
-                                                                                           )))
+                                                                                        round_no + 1,
+                                                                                        zip(remaining_candidates.keys(),
+                                                                                            remaining_candidates.values()
+                                                                                            )))
             round_no = round_no + 1
             to_eliminate = min(remaining_candidates, key=remaining_candidates.get)
             votes = remaining_candidates[to_eliminate]
-            self.logger.debug('Eliminating {}. Total votes: {}'.format(to_eliminate, sum(remaining_candidates.values())))
+            self.logger.debug('Eliminating {}. Total votes: {}'.format(to_eliminate,
+                                                                       sum(remaining_candidates.values())))
             del remaining_candidates[to_eliminate]
             try:
                 to_dist = pref_flows[Parties(to_eliminate)]
@@ -120,5 +148,7 @@ class Seat(object):
         self.logger.info('Runoff for {} complete. Final results: {}'.format(self.name, zip(remaining_candidates.keys(),
                                                                                            remaining_candidates.values())))
         self.winner = max(remaining_candidates, key=remaining_candidates.get)
+        self.loser = min(remaining_candidates, key=remaining_candidates.get)
         self.winning_margin = max(remaining_candidates.values())
+        self.losing_margin = min(remaining_candidates.values())
         return remaining_candidates

@@ -58,6 +58,16 @@ class Parties(Enum):
     VOL = "VOL"
 
 
+class RunoffType(Enum):
+    ALP_LIB = "ALP_LIB"
+    ALP_NAT = "ALP_NAT"
+    ALP_GRN = "ALP_GRN"
+    ALP_IND = "ALP_IND"
+    LIB_IND = "COA_IND"
+    LIB_GRN = "LIB_GRN"
+    NAT_IND = "NAT_IND"
+
+
 def load_fundamentals_index():
     raise NotImplementedError()
 
@@ -65,7 +75,7 @@ def load_fundamentals_index():
 def get_logger():
     logger = logging.getLogger('emma-chisit-2019')
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     return logger
 
 
@@ -92,3 +102,16 @@ def apply_swing(poll, swing):
     else:
         swing_applied[Parties.OTH] = remainder
     return swing_applied
+
+
+def load_pref_flows(pref_flows_filename):
+    with open(pref_flows_filename) as f:
+        pref_flows_data = json.load(f)
+    pref_flows_dict = {}
+    for runoff_type in pref_flows_data:
+        pref_flows_dict[runoff_type["runoff_type"]] = runoff_type["pref_flow"]
+        for party in Parties:
+            if party.name not in runoff_type["pref_flow"]:
+                pref_flows_dict[runoff_type["runoff_type"]][party.name] = runoff_type["default_pref_flow"]
+    print pref_flows_dict
+    return pref_flows_dict
