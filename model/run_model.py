@@ -24,14 +24,14 @@ def main():
     poll_aggregator = PollAggregator(polls, DEFAULT_WEIGHTS)
     pref_flows = load_pref_flows(PREF_FLOW_CONFIG)
     poll_aggregate = poll_aggregator.aggregate_polls(dt.datetime.today(), 60, logger)
-    overall_swing = get_swing(PREVIOUS_ELECTION_RESULTS, poll_aggregate.results)
+    overall_swing = get_swing(PREVIOUS_ELECTION_RESULTS, poll_aggregate.results, logger)
     # fundamentals_index = utils.load_fundamentals_index()
     # additional_features = fundamentals_index
     seats = load_seats(SEATS_CONFIG, logger)
     i = 0
     while i < NUM_ITERATIONS:
         results_dict = {'seat': [], 'winner': [], 'tpp': [], 'loser': [], 'losing_margin': []}
-        for seat in [seat for seat in seats if seat.name == 'Cowper']:
+        for seat in [seat for seat in seats]:# if seat.name == 'Cowper']:
             logger.debug('Result last election: {}'.format(seat.last_result))
             seat.runoff(apply_swing(seat.last_result, overall_swing), pref_flows)
             results_dict['seat'].append(seat.name)

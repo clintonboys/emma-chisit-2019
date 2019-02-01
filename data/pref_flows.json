@@ -44,20 +44,178 @@
     }
   },
   {
+    "runoff_type": "LIB_NAT",
+    "default_pref_flow": {"LIB": 0.5, "NAT": 0.5},
+    "pref_flow": {
+      "GRN": {
+        "LIB": 0.85,
+        "NAT": 0.15
+      },
+      "ALP": {
+        "LIB": 0.85,
+        "NAT": 0.15
+      }
+    }
+  },
+  {
     "runoff_type": "NAT_IND",
-    "default_pref_flow": {"NAT": 0.5, "IND": 0.5},
+    "default_pref_flow": {"NAT": 0.5, "IND1": 0.5},
     "pref_flow": {
       "LIB": {
         "NAT": 1.00,
-        "IND": 0.00
+        "IND1": 0.00
       },
       "ALP": {
-        "IND": 0.85,
+        "IND1": 0.85,
         "NAT": 0.15
       },
       "GRN": {
-        "IND": 0.85,
+        "IND1": 0.85,
         "NAT": 0.15
+      }
+    }
+  },
+  {
+    "runoff_type": "LIB_GRN",
+    "default_pref_flow": {"LIB": 0.5, "GRN": 0.5},
+    "pref_flow": {
+      "CDM": {
+        "LIB": 1.00,
+        "GRN": 0.00
+      },
+      "ALP": {
+        "LIB": 0.15,
+        "GRN": 0.85
+      },
+      "IND1": {
+        "LIB": 0.85,
+        "GRN": 0.15
+      }
+    }
+  },
+  {
+    "runoff_type": "ALP_GRN",
+    "default_pref_flow": {"ALP": 0.5, "GRN": 0.5},
+    "pref_flow": {
+      "LIB": {
+        "ALP": 1.00,
+        "GRN": 0.00
+      },
+      "IND1": {
+        "ALP": 0.5,
+        "GRN": 0.5
+      },
+      "SEX": {
+        "LIB": 0.15,
+        "GRN": 0.85
+      }
+    }
+  },
+  {
+    "runoff_type": "LIB_NXT",
+    "default_pref_flow": {"LIB": 0.5, "NXT": 0.5},
+    "pref_flow": {
+      "FFS": {
+        "LIB": 0.80,
+        "NXT": 0.20
+      },
+      "ALP": {
+        "LIB": 0.15,
+        "NXT": 0.85
+      },
+      "GRN": {
+        "LIB": 0.95,
+        "NXT": 0.05
+      }
+    }
+  },
+  {
+    "runoff_type": "ALP_NXT",
+    "default_pref_flow": {"ALP": 0.5, "NXT": 0.5},
+    "pref_flow": {
+      "FFS": {
+        "ALP": 0.50,
+        "NXT": 0.50
+      },
+      "LIB": {
+        "ALP": 0.15,
+        "NXT": 0.85
+      },
+      "GRN": {
+        "ALP": 0.95,
+        "NXT": 0.05
+      }
+    }
+  },
+  {
+    "runoff_type": "LIB_IND",
+    "default_pref_flow": {"LIB": 0.5, "IND1": 0.5},
+    "pref_flow": {
+      "NAT": {
+        "LIB": 1.00,
+        "IND1": 0.00
+      },
+      "ALP": {
+        "LIB": 0.85,
+        "IND1": 0.15
+      },
+      "GRN": {
+        "LIB": 0.85,
+        "IND1": 0.15
+      }
+    }
+  },
+  {
+    "runoff_type": "ALP_IND",
+    "default_pref_flow": {"ALP": 0.5, "IND1": 0.5},
+    "pref_flow": {
+      "NAT": {
+        "ALP": 1.00,
+        "IND1": 0.00
+      },
+      "LIB": {
+        "ALP": 0.85,
+        "IND1": 0.15
+      },
+      "GRN": {
+        "ALP": 0.85,
+        "IND1": 0.15
+      }
+    }
+  },
+  {
+    "runoff_type": "LIB_KAP",
+    "default_pref_flow": {"LIB": 0.5, "KAP": 0.5},
+    "pref_flow": {
+      "FFS": {
+        "LIB": 0.80,
+        "KAP": 0.20
+      },
+      "ALP": {
+        "LIB": 0.15,
+        "KAP": 0.85
+      },
+      "GRN": {
+        "LIB": 0.95,
+        "KAP": 0.05
+      }
+    }
+  },
+  {
+    "runoff_type": "LIB_ONP",
+    "default_pref_flow": {"LIB": 0.5, "ONP": 0.5},
+    "pref_flow": {
+      "KAP": {
+        "LIB": 0.80,
+        "ONP": 0.20
+      },
+      "ALP": {
+        "LIB": 0.15,
+        "ONP": 0.85
+      },
+      "GRN": {
+        "LIB": 0.95,
+        "ONP": 0.05
       }
     }
   }

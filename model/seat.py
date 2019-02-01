@@ -40,6 +40,11 @@ class Seat(object):
         self.winning_margin = 0
         self.losing_margin = 0
 
+
+    def clean_low_inds(self, candidates):
+        return candidates
+
+
     def runoff(self, primary_results, pref_flows):
         """
         While there are more than two candidates remaining, we take the candidate
@@ -72,20 +77,31 @@ class Seat(object):
         # TODO: Make the runoff types enum compatible with the parties
         #  enum to reduce the number of lines of code here.
         runoff_type = None
+        independent_candidates = [k for k in [x.name for x in primary_results.keys()] if 'IND' in k]
         if set(tpp) == {Parties.ALP, Parties.LIB}:
             runoff_type = RunoffType.ALP_LIB
         if set(tpp) == {Parties.ALP, Parties.NAT}:
             runoff_type = RunoffType.ALP_NAT
         elif set(tpp) == {Parties.ALP, Parties.GRN}:
             runoff_type = RunoffType.ALP_GRN
-        elif set(tpp) == {Parties.ALP, Parties.IND}:
+        elif set(tpp) == {Parties.ALP, Parties.IND1}:
             runoff_type = RunoffType.ALP_IND
-        elif set(tpp) == {Parties.LIB, Parties.IND}:
+        elif set(tpp) == {Parties.LIB, Parties.IND1}:
             runoff_type = RunoffType.LIB_IND
         elif set(tpp) == {Parties.LIB, Parties.GRN}:
             runoff_type = RunoffType.LIB_GRN
-        elif set(tpp) == {Parties.NAT, Parties.IND}:
+        elif set(tpp) == {Parties.NAT, Parties.IND1}:
             runoff_type = RunoffType.NAT_IND
+        elif set(tpp) == {Parties.LIB, Parties.NXT}:
+            runoff_type = RunoffType.LIB_NXT
+        elif set(tpp) == {Parties.ALP, Parties.NXT}:
+            runoff_type = RunoffType.ALP_NXT
+        elif set(tpp) == {Parties.LIB, Parties.NAT}:
+            runoff_type = RunoffType.LIB_NAT
+        elif set(tpp) == {Parties.LIB, Parties.KAP}:
+            runoff_type = RunoffType.LIB_KAP
+        elif set(tpp) == {Parties.LIB, Parties.ONP}:
+            runoff_type = RunoffType.LIB_ONP
 
         if runoff_type is None:
             self.logger.info('Runoff candidates not supported. ')
@@ -94,13 +110,13 @@ class Seat(object):
             self.logger.info('Runoff between {}'.format(runoff_type))
 
         pref_flows = pref_flows[runoff_type.name]
-        self.logger.debug(pref_flows)
         try:
             del primary_results['Informal']
         except KeyError:
             pass
-
+        self.logger.info('Primary results {}:'.format(primary_results.copy()))
         remaining_candidates = {Parties(party): vote for party, vote in primary_results.copy().iteritems()}
+        remaining_candidates = self.clean_low_inds(remaining_candidates)
         round_no = 0
 
         while len(remaining_candidates) > 2:
@@ -116,9 +132,8 @@ class Seat(object):
                                                                        sum(remaining_candidates.values())))
             del remaining_candidates[to_eliminate]
             try:
-                to_dist = pref_flows[Parties(to_eliminate)]
+                to_dist = pref_flows[Parties(to_eliminate).name]
             except KeyError, e:
-                self.logger.debug(pref_flows)
                 self.logger.debug(str(e))
                 to_dist = {}
                 for party in remaining_candidates:
@@ -131,20 +146,27 @@ class Seat(object):
             self.logger.debug('To dist: {}'.format(to_dist))
             fixed_preferences = {}
             for party in remaining_candidates:
-                if Parties(party) in to_dist.keys():
-                    fixed_preferences[Parties(party)] = to_dist[Parties(party)]
-            preference_sum = np.sum([fixed_preferences[key] for key in fixed_preferences])
-            for party in fixed_preferences:
-                fixed_preferences[party] = fixed_preferences[party] / preference_sum
+                if unicode(party.name, "utf-8") in to_dist.keys():
 
-            for party in remaining_candidates:
-                if Parties(party) in to_dist:
-                    remaining_candidates[Parties(party)] = np.round(remaining_candidates[Parties(party)] +
-                                                                    to_dist[Parties(party)] * votes, 2)
-                # else:
-                #     if float(remaining_candidates[party]) / float(total) > 0.1:
-                #         print remaining_candidates[party], total
-                #         raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
+                    self.logger.debug('Transferring {} votes to {} party'.format(to_dist[party.name] * votes, party))
+                    remaining_candidates[party] += to_dist[party.name] * votes
+                else:
+                    self.logger.debug('Couldn\'t find {} in {}'.format(party.name, to_dist.keys()))
+            #         fixed_preferences[Parties(party)] = to_dist[Parties(party)]
+            # preference_sum = np.sum([fixed_preferences[key] for key in fixed_preferences])
+            # for party in fixed_preferences:
+            #     fixed_preferences[party] = fixed_preferences[party] / preference_sum
+            #
+            # for party in remaining_candidates:
+            #     if Parties(party) in to_dist:
+            #         self.logger.debug(np.round(remaining_candidates[Parties(party)] +
+            #                                                         to_dist[Parties(party)] * votes, 2))
+            #         remaining_candidates[Parties(party)] = np.round(remaining_candidates[Parties(party)] +
+            #                                                         to_dist[Parties(party)] * votes, 2)
+            #     # else:
+            #     #     if float(remaining_candidates[party]) / float(total) > 0.1:
+            #     #         print remaining_candidates[party], total
+            #     #         raise KeyError('Runoff Error: Missing preference data for important contest: {}'.format(party))
         self.logger.info('Runoff for {} complete. Final results: {}'.format(self.name, zip(remaining_candidates.keys(),
                                                                                            remaining_candidates.values())))
         self.winner = max(remaining_candidates, key=remaining_candidates.get)
