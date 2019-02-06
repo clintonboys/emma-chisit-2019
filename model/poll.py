@@ -1,9 +1,14 @@
 import numpy as np
 import pandas as pd
+import mysql.connector
 from utils import Parties
 
 
-def load_polls(poll_database, logger):
+def load_polls(past_days, logger):
+    cnx = mysql.connector.connect(user='root', password='password',
+                                  host='localhost',
+                                  database='emma')
+    query = 'select '
     poll_data = pd.read_csv(poll_database).fillna(0)
     others_cols = [col for col in poll_data.columns if 'oth_' in col]
     poll_data['start_date'] = pd.to_datetime(poll_data['start_date'])

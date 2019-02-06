@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 import datetime as dt
 from seat import load_seats
@@ -6,6 +7,7 @@ from poll_aggregator import PollAggregator
 from utils import get_logger, Parties, get_swing, apply_swing, load_pref_flows
 
 
+PAST_DAYS = 60
 NUM_ITERATIONS = 1
 PREVIOUS_ELECTION_RESULTS = {Parties.ALP: 34.73, Parties.LIB: 42.04, Parties.GRN: 10.23,
                              Parties.NXT: 1.85, Parties.KAP: 0.54, Parties.IND: 2.81,
@@ -20,28 +22,30 @@ POLL_DATABASE = '/Users/clinton/Documents/dev/emma-chisit-2019/data/poll_bludger
 
 def main():
     logger = get_logger()
-    polls = load_polls(POLL_DATABASE, logger)
+    polls = load_polls(PAST_DAYS, logger)
     poll_aggregator = PollAggregator(polls, DEFAULT_WEIGHTS)
     pref_flows = load_pref_flows(PREF_FLOW_CONFIG)
-    poll_aggregate = poll_aggregator.aggregate_polls(dt.datetime.today(), 60, logger)
+    poll_aggregate = poll_aggregator.aggregate_polls(dt.datetime.today(), PAST_DAYS, logger)
     overall_swing = get_swing(PREVIOUS_ELECTION_RESULTS, poll_aggregate.results, logger)
     # fundamentals_index = utils.load_fundamentals_index()
     # additional_features = fundamentals_index
     seats = load_seats(SEATS_CONFIG, logger)
     i = 0
     while i < NUM_ITERATIONS:
-        results_dict = {'seat': [], 'winner': [], 'tpp': [], 'loser': [], 'losing_margin': []}
+        results_dict = {'seat': [], 'state': [], 'winner': [], 'TPP': [], 'loser': [], 'losing_margin': []}
         for seat in [seat for seat in seats]:# if seat.name == 'Cowper']:
             logger.debug('Result last election: {}'.format(seat.last_result))
             seat.runoff(apply_swing(seat.last_result, overall_swing), pref_flows)
             results_dict['seat'].append(seat.name)
+            results_dict['state'].append(seat.state)
             results_dict['winner'].append(seat.winner.name)
-            results_dict['tpp'].append(seat.winning_margin)
+            results_dict['TPP'].append(np.round(seat.winning_margin, 2))
             results_dict['loser'].append(seat.loser.name)
             results_dict['losing_margin'].append(seat.losing_margin)
         i += 1
         results = pd.DataFrame.from_dict(results_dict)
-        results.to_csv('/Users/clinton/Documents/dev/emma-chisit-2019/data/iteration{}.csv'.format(i))
+        results[['seat', 'state', 'winner', 'TPP']]\
+            .to_csv('/Users/clinton/Documents/dev/emma-chisit-2019/site/current_forecast.csv'.format(i))
         print results.groupby('winner').agg('count')
 
 
