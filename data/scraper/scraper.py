@@ -49,7 +49,7 @@ def ordinal_string(n):
 class GhostScraper(object):
     def __init__(self, latest_tweet, logger):
         self._latest_tweet = latest_tweet
-        self._max_id = latest_tweet + 9999999999999999999
+        self._max_id = latest_tweet + 99999999999999999
         self.logger = logger
         self.tweets = []
 
@@ -59,11 +59,12 @@ class GhostScraper(object):
         tweets_remaining = True
         n = 1
         while tweets_remaining:
-            self.logger('Now scraping page #' + ordinal_string(n) +
-                        str(np.round(time.time() - start_time, 3)) + ' seconds elapsed...')
+            self.logger.info('Now scraping ' + ordinal_string(n) + ' page ' +
+                              str(np.round(time.time() - start_time, 3)) + ' seconds elapsed...')
             results = twitter.statuses.user_timeline(screen_name=GHOST_NAME,
                                                      since_id=self._latest_tweet,
-                                                     max_id=self._max_id)
+                                                     count=10)
+            print results
             try:
                 self._max_id = results[-1]["id"]
             except IndexError:
@@ -100,6 +101,8 @@ def main():
     latest_tweet = get_latest_tweet()
     scraper = GhostScraper(latest_tweet, logger)
     scraper.scrape_ghost(ACCESS_TOKEN, CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN_SECRET)
+    scraper.write_tweets()
+
 
 if __name__ == '__main__':
     main()

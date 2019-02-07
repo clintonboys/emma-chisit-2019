@@ -13,3 +13,10 @@ CREATE TABLE emma.polls
  party varchar(36),
  result float
 );
+
+CREATE TABLE emma.tweets
+(
+ id bigint,
+ text text,
+ created_at timestamp
+);
