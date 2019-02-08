@@ -1,6 +1,6 @@
 CREATE TABLE emma.polls
 (
- poll_id int,
+ poll_id int not null auto_increment,
  pollster varchar(36),
  start_date date,
  end_date date,
@@ -11,7 +11,8 @@ CREATE TABLE emma.polls
  is_primary boolean,
  is_tpp boolean,
  party varchar(36),
- result float
+ result float,
+ primary key (poll_id)
 );
 
 CREATE TABLE emma.tweets
