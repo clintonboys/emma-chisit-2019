@@ -49,7 +49,7 @@ def ordinal_string(n):
 class GhostScraper(object):
     def __init__(self, latest_tweet, logger):
         self._latest_tweet = latest_tweet
-        self._max_id = latest_tweet + 99999999999999999
+        self._max_id = None
         self.logger = logger
         self.tweets = []
 
@@ -60,18 +60,28 @@ class GhostScraper(object):
         n = 1
         while tweets_remaining:
             self.logger.info('Now scraping ' + ordinal_string(n) + ' page ' +
-                              str(np.round(time.time() - start_time, 3)) + ' seconds elapsed...')
-            results = twitter.statuses.user_timeline(screen_name=GHOST_NAME,
-                                                     since_id=self._latest_tweet,
-                                                     count=10)
+                             str(np.round(time.time() - start_time, 3)) + ' seconds elapsed...')
+            if self._max_id:
+                results = twitter.statuses.user_timeline(screen_name=GHOST_NAME,
+                                                         since_id=self._latest_tweet,
+                                                         max_id=self._max_id - 1,
+                                                         count=10)
+            else:
+                results = twitter.statuses.user_timeline(screen_name=GHOST_NAME,
+                                                         since_id=self._latest_tweet,
+                                                         count=10)
             print results
             try:
                 self._max_id = results[-1]["id"]
+                print self._max_id
             except IndexError:
                 tweets_remaining = False
                 pass
             for status in results:
                 try:
+                    status['created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
+                                            time.strptime(status['created_at'], '%a %b %d %H:%M:%S +0000 %Y'))
+
                     self.tweets.append({'id': status["id"],
                                         'text': str(status["text"]).encode('utf-8')
                                             .replace(',', '').replace('\n', '').replace('\t', ''),
@@ -79,7 +89,7 @@ class GhostScraper(object):
                 except UnicodeEncodeError:
                     pass
             length = len(results)
-            if length < 2:
+            if length == 0:
                 tweets_remaining = False
             n += 1
 
@@ -94,11 +104,13 @@ class GhostScraper(object):
         cnx.commit()
         cnx.close()
 
+
 def main():
     logger = logging.getLogger('emma-chisit-2019')
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logger.setLevel(logging.INFO)
     latest_tweet = get_latest_tweet()
+    print latest_tweet
     scraper = GhostScraper(latest_tweet, logger)
     scraper.scrape_ghost(ACCESS_TOKEN, CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN_SECRET)
     scraper.write_tweets()
