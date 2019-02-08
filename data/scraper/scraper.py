@@ -158,33 +158,57 @@ class GhostScraper(object):
                     pass
                 if 'primary' in words:
                     logger.info('Parsing poll of type state primary {}'.format(state))
-                elif '2' in words:
+                    is_primary, is_tpp = True, False
+                elif 'party' in words and 'party' in words and 'preferred' in words:
                     logger.info('Parsing poll of type state TPP {}'.format(state))
+                    is_primary, is_tpp = False, True
+                else:
+                    logger.info('Unable to determine poll type for {}'.format(words))
+                    pass
+                for party in PARTIES:
+                    votes = get_party_vote(party, words, logger)
+                    if votes:
+                        logger.info('Parsed party {}: {} from tweet'.format(party, votes))
+                        write_poll(cursor, pollster, tweet['created_at'], 'federal', state,
+                                   is_primary, is_tpp, party, votes)
             elif 'federal' in words and 'seat' not in words:
                 if 'primary' in words:
+                    is_primary, is_tpp = True, False
                     logger.info('Parsing poll of type federal primary')
-                elif '2' in words:
+                elif 'party' in words and 'preferred' in words:
                     logger.info('Parsing poll of type federal TPP')
+                    is_primary, is_tpp = False, True
+                else:
+                    logger.info('Unable to determine poll type for {}'.format(words))
+                    pass
+                for party in PARTIES:
+                    votes = get_party_vote(party, words, logger)
+                    if votes:
+                        logger.info('Parsed party {}: {} from tweet'.format(party, votes))
+                        write_poll(cursor, pollster, tweet['created_at'], 'federal', 'aus',
+                                   is_primary, is_tpp, party, votes)
             elif 'preferred' in words and ('pm' in words or 'pm:' in words):
-                logger.info('Parsing poll of type preferred PM')
+                logger.info('Skipping parsing poll of type preferred PM')
             elif 'preferred' in words and ('premier' in words or 'premier:' in words):
                 state = [i for i in STATES if i in words][0]
-                logger.info('Parsing poll of type preferred premier {}'.format(state))
+                logger.info('Skipping parsing poll of type preferred premier {}'.format(state))
             elif 'quarterly' in words:
-                logger.info('Parsing poll of type quarterly Newspoll')
+                logger.info('Skipping parsing poll of type quarterly Newspoll')
             elif any(i in STATES for i in words) and 'seat' in words:
                 state = [i for i in STATES if i in words][0]
-                logger.info('Parsing poll of type state marginal {}'.format(state))
+                logger.info('Skipping parsing poll of type state marginal {}'.format(state))
             elif 'seat' in words:
                 if 'primary' in words:
                     logger.info('Parsing poll of type federal marginal primary')
-                elif '2' in words:
+                    is_primary, is_tpp = True, False
+                elif 'party' in words and 'preferred' in words:
+                    is_primary, is_tpp = False, True
                     logger.info('Parsing poll of type federal marginal TPP')
             elif any(i in STATES for i in words) and 'approve' in words:
                 state = [i for i in STATES if i in words][0]
-                logger.info('Parsing poll of type state approval {}'.format(state))
+                logger.info('Skipping parsing poll of type state approval {}'.format(state))
             elif 'approve' in words:
-                logger.info('Parsing poll of type federal approval')
+                logger.info('Skipping parsing poll of type federal approval')
             else:
                 logger.info('Poll unsupported; text {}'.format(words))
         cnx.commit()
@@ -195,17 +219,18 @@ def main():
     logger = logging.getLogger('emma-chisit-2019')
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logger.setLevel(logging.INFO)
-    # scraper = GhostScraper(get_latest_tweet(), logger)
-    # scraper.scrape_ghost(ACCESS_TOKEN, CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN_SECRET)
-    # scraper.write_tweets()
-    tweet_df = pd.read_csv('/Users/clinton/Documents/dev/elections/aus_model/data/ghost_who_votes/tweet_database.csv')
-    tweet_df['time'] = pd.to_datetime(tweet_df['time'])
-    tweet_list = []
-    for i in range(0,len(tweet_df)):
-        tweet_list.append({'id': tweet_df['tweet_id'].iloc[i],
-                           'text': str(tweet_df['tweet_text'].iloc[i]),
-                           'created_at': tweet_df['time'].iloc[i]})
-    GhostScraper.parse_tweets(tweet_list, logger)
+    scraper = GhostScraper(get_latest_tweet(), logger)
+    scraper.scrape_ghost(ACCESS_TOKEN, CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN_SECRET)
+    scraper.write_tweets()
+    scraper.parse_tweets(scraper.tweets, scraper.logger)
+    # tweet_df = pd.read_csv('/Users/clinton/Documents/dev/elections/aus_model/data/ghost_who_votes/tweet_database.csv')
+    # tweet_df['time'] = pd.to_datetime(tweet_df['time'])
+    # tweet_list = []
+    # for i in range(0,len(tweet_df)):
+    #     tweet_list.append({'id': tweet_df['tweet_id'].iloc[i],
+    #                        'text': str(tweet_df['tweet_text'].iloc[i]),
+    #                        'created_at': tweet_df['time'].iloc[i]})
+    # GhostScraper.parse_tweets(tweet_list, logger)
 
 
 if __name__ == '__main__':
